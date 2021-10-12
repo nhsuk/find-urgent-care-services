@@ -1,0 +1,329 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Pregnancy
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "services-near-you",
+      text: "Services near you"
+    }
+  ],
+      href: "find-a-gp",
+      text: "Find a GP"
+})
+}}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="" id="main-content">
+      
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+  <div class="nhsuk-u-reading-width">
+      <h1 class="">
+          GPs near W1B 2AE
+      </h1>
+  </div> 
+
+  <hr class=".horizontal-line.results">
+
+  <div class="results">
+      
+    <ol class="nhsuk-list results service-results">
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_0" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">The Mayfair Medical Centre is </span>0.3 miles away</p>
+                    <h2 id="orgname_0" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/the-mayfair-medical-centre/XE87648">The Mayfair Medical Centre</a></h2>
+                    <p id="address_0" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        3 - 5 Weighhouse Street, London, Greater London, W1K 5LS<br>
+                        020 7493 1647
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=3+-+5+Weighhouse+Street%2c+London%2c+Greater+London%2c+W1K+5LS&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for The Mayfair Medical Centre at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <div>
+
+    </div>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_1" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">GT Chapel Street Medical Centre For The Homeless is </span>0.4 miles away</p>
+                    <h2 id="orgname_1" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/gt-chapel-street-medical-centre-for-the-homeless/XE87061001">GT Chapel Street Medical Centre For The Homeless</a></h2>
+                    <p id="address_1" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        13 Great Chapel Street, London, Greater London, W1F 8FL<br>
+                        
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=13+Great+Chapel+Street%2c+London%2c+Greater+London%2c+W1F+8FL&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for GT Chapel Street Medical Centre For The Homeless at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+            <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_2" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Great Chapel Street Medical Centre is </span>0.4 miles away</p>
+                    <h2 id="orgname_2" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/great-chapel-street-medical-centre/XE87772">Great Chapel Street Medical Centre</a></h2>
+                    <p id="address_2" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        13 Great Chapel Street, London, Greater London, W1F 8FL<br>
+                        020 7437 9360
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=13+Great+Chapel+Street%2c+London%2c+Greater+London%2c+W1F+8FL&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Great Chapel Street Medical Centre at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+            <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_3" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Cavendish Health Centre is </span>0.4 miles away</p>
+                    <h2 id="orgname_3" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/cavendish-health-centre/XE87745">Cavendish Health Centre</a></h2>
+                    <p id="address_3" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        53 New Cavendish Street, London, Greater London, W1G 9TQ<br>
+                        020 7487 5244
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=53+New+Cavendish+Street%2c+London%2c+Greater+London%2c+W1G+9TQ&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Cavendish Health Centre at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+            <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_4" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Soho Square General Practice is </span>0.5 miles away</p>
+                    <h2 id="orgname_4" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/soho-square-general-practice/XE87714">Soho Square General Practice</a></h2>
+                    <p id="address_4" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        First Floor, 1 Frith Street, London, Greater London, W1D 3HZ<br>
+                        020 3405 6570
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=First+Floor%2c+1+Frith+Street%2c+London%2c+Greater+London%2c+W1D+3HZ&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Soho Square General Practice at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_5" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Soho Centre For Health And Care is </span>0.5 miles away</p>
+                    <h2 id="orgname_5" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/soho-centre-for-health-and-care/XE87069">Soho Centre For Health And Care</a></h2>
+                    <p id="address_5" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        30 Soho Square, London, Greater London, W1D 3QS<br>
+                        020 3405 6540
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=30+Soho+Square%2c+London%2c+Greater+London%2c+W1D+3QS&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Soho Centre For Health And Care at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_6" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Fitzrovia Medical Centre is </span>0.5 miles away</p>
+                    <h2 id="orgname_6" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/fitzrovia-medical-centre/XE87066">Fitzrovia Medical Centre</a></h2>
+                    <p id="address_6" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        31 Fitzroy Square, London, Greater London, W1T 6EU<br>
+                        020 7387 5798
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=31+Fitzroy+Square%2c+London%2c+Greater+London%2c+W1T+6EU&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Fitzrovia Medical Centre at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_7" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Lees Place Medical Centre is </span>0.5 miles away</p>
+                    <h2 id="orgname_7" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/lees-place-medical-centre/XE87002001">Lees Place Medical Centre</a></h2>
+                    <p id="address_7" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        11 Lees Place, London, Greater London, W1K 6LN<br>
+                        020 7036 6060
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=11+Lees+Place%2c+London%2c+Greater+London%2c+W1K+6LN&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Lees Place Medical Centre at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_8" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Ridgmount Practice is </span>0.6 miles away</p>
+                    <h2 id="orgname_8" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/ridgmount-practice/XF83043">Ridgmount Practice</a></h2>
+                    <p id="address_8" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        8 Ridgmount Street, London, Greater London, WC1E 7AA<br>
+                        020 7387 6306
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=8+Ridgmount+Street%2c+London%2c+Greater+London%2c+WC1E+7AA&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Ridgmount Practice at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_9" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Gower Street Practice is </span>0.7 miles away</p>
+                    <h2 id="orgname_9" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/gower-street-practice/XF83005">Gower Street Practice</a></h2>
+                    <p id="address_9" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        20 Gower Street, London, Greater London, WC1E 6DP<br>
+                        020 7467 6800
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=20+Gower+Street%2c+London%2c+Greater+London%2c+WC1E+6DP&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Gower Street Practice at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+        <div class="nhsuk-grid-row results__details nhsuk-list-results">
+            <div class="nhsuk-grid-column-two-thirds nhsuk-u-margin-bottom-5">
+                <div>
+                    <p id="distance_10" class="nhsuk-body-s nhsuk-u-margin-bottom-3"><span class="nhsuk-u-visually-hidden">Marylebone Health Centre is </span>0.7 miles away</p>
+                    <h2 id="orgname_10" class="results__name nhsuk-u-padding-top-0"><a href="/services/gp-surgery/marylebone-health-centre/XE87737">Marylebone Health Centre</a></h2>
+                    <p id="address_10" class="nhsuk-list nhsuk-u-margin-bottom-2">
+                        17 Marylebone Road, London, Greater London, NW1 5LT<br>
+                        020 7935 6328
+                    </p>
+                    <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                        <li class="results__item__link"><a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.51501928916459,-0.14261721099308294&amp;destination=17+Marylebone+Road%2c+London%2c+Greater+London%2c+NW1+5LT&amp;t=m" class="maplink">Map and directions</a><span class="nhsuk-u-visually-hidden"> for Marylebone Health Centre at </span></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </li>
+    
+    </ol>
+          <div>
+  </div>
+  </div>
+</div>
+</div>
+
+
+  </main>
+</div>
+
+
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}

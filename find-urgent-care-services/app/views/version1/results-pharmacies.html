@@ -1,0 +1,1120 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Pregnancy
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "services-near-you",
+      text: "Services near you"
+    }
+  ],
+      href: "find-a-pharmacy",
+      text: "Find a pharmacy"
+})
+}}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="nhsuk-width-container">
+    <main class="" id="main-content">
+        
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+    <h1 class="nhsuk-u-reading-width nhsuk-u-margin-bottom-4">
+        Pharmacies near CR8 2AJ
+    </h1>
+
+
+    <div class="results">
+        <p class="nhsuk-u-margin-bottom-6"> Showing all pharmacies. <a href="/service-search/find-a-pharmacy/results/CR8%202AJ?open=True">Only show pharmacies open now.</a> </p>
+        
+        <hr class=".horizontal-line.results">
+        
+        <ol class="nhsuk-list results service-results">
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Hobbs Pharmacy is </span>0.2 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/hobbs-pharmacy/XFXC31">Hobbs Pharmacy</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                Purley War Memorial Hospital, 856 Brighton Road, Purley, Croydon, CR8 2YL<br>
+                                020 8668 7322
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=Purley+War+Memorial+Hospital%2c+856+Brighton+Road%2c+Purley%2c+Croydon%2c+CR8+2YL&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Hobbs Pharmacy at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="nhsuk-grid-column-one-half">
+                    <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details0">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-1" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-1" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+                                                        5:00 pm - 8:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+                                                        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Orion Pharmacy is </span>0.2 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/orion-pharmacy/XFJY76">Orion Pharmacy</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                939 Brighton Road, Purley, Surrey, CR8 2BP<br>
+                                020 8660 6122
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=939+Brighton+Road%2c+Purley%2c+Surrey%2c+CR8+2BP&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Orion Pharmacy at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details1">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-2" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-2" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+                                                        9:00 am - 2:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+                                                        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Boots is </span>0.3 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/boots/XFJA14">Boots</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                15 High St, Purley, Surrey, CR8 2AF<br>
+                                020 8660 0271
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=15+High+St%2c+Purley%2c+Surrey%2c+CR8+2AF&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Boots at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 5:30 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details2">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-3" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-3" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        9:00 am - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        9:00 am - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        9:00 am - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        9:00 am - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        9:00 am - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Tesco Stores Limited is </span>0.3 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/tesco-stores-limited/XFP526">Tesco Stores Limited</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                Tesco Pharmacy, 8 Purley Road, Purley, CR8 2HA<br>
+                                0345 677 9566
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=Tesco+Pharmacy%2c+8+Purley+Road%2c+Purley%2c+CR8+2HA&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Tesco Stores Limited at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 9:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details3">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-4" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-4" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        8:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        8:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        8:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        8:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        8:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        8:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        11:00 am - 5:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Foxley Lane Pharmacy is </span>0.7 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/foxley-lane-pharmacy/XFQ724">Foxley Lane Pharmacy</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                32 Foxley Lane, Purley, Surrey, CR8 3EE<br>
+                                020 8668 6891
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=32+Foxley+Lane%2c+Purley%2c+Surrey%2c+CR8+3EE&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Foxley Lane Pharmacy at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details4">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-5" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-5" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        8:30 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        8:30 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        8:30 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        8:30 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        8:30 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 12:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Riddlesdown Pharmacy is </span>0.7 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/riddlesdown-pharmacy/XFD662">Riddlesdown Pharmacy</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                104 Lower Barn Road, Purley, Surrey, CR8 1HR<br>
+                                020 8660 7150
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=104+Lower+Barn+Road%2c+Purley%2c+Surrey%2c+CR8+1HR&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Riddlesdown Pharmacy at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 5:30 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details5">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-6" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+        2:15 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+        2:15 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+        2:30 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+        2:15 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+        2:15 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Mccoig Pharmacy is </span>0.9 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/mccoig-pharmacy/XFLW45">Mccoig Pharmacy</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                367 Brighton Road, South Croydon, Croydon, Surrey, CR2 6ES<br>
+                                020 8688 3253
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=367+Brighton+Road%2c+South+Croydon%2c+Croydon%2c+Surrey%2c+CR2+6ES&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Mccoig Pharmacy at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:30 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details6">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-7" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-7" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Makepeace and Jackson is </span>0.9 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/makepeace-and-jackson/XFK170">Makepeace and Jackson</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                7 Station Parade, Sanderstead Road, Sanderstead, South Croydon, CR2 0PH<br>
+                                020 8657 0221
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=7+Station+Parade%2c+Sanderstead+Road%2c+Sanderstead%2c+South+Croydon%2c+CR2+0PH&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Makepeace and Jackson at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details7">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-8" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-8" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Zina Chemist is </span>1.1 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/zina-chemist/XFVH66">Zina Chemist</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                76-78 Godstone Road, Kenley, Croydon, London, CR8 5AA<br>
+                                020 8660 8811
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=76-78+Godstone+Road%2c+Kenley%2c+Croydon%2c+London%2c+CR8+5AA&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Zina Chemist at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:30 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details8">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-9" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Day Lewis Pharmacy is </span>1.3 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/day-lewis-pharmacy/XFGQ57">Day Lewis Pharmacy</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                45, Elmfield Way, Sanderstead, Surrey, CR2 0EJ<br>
+                                020 8657 2474
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=45%2c+Elmfield+Way%2c+Sanderstead%2c+Surrey%2c+CR2+0EJ&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Day Lewis Pharmacy at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 5:30 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details9">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-10" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-10" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        8:30 am - 1:00 pm<br>
+        2:00 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        8:30 am - 1:00 pm<br>
+        2:00 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        8:30 am - 1:00 pm<br>
+        2:00 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        8:30 am - 1:00 pm<br>
+        2:00 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        8:30 am - 1:00 pm<br>
+        2:00 pm - 5:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Day Lewis Pharmacy is </span>1.4 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/day-lewis-pharmacy/XFP402">Day Lewis Pharmacy</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                Unit 4, Mollinson Square, Wallington, Surrey, SM6 9DA<br>
+                                020 8669 4083
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=Unit+4%2c+Mollinson+Square%2c+Wallington%2c+Surrey%2c+SM6+9DA&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Day Lewis Pharmacy at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:30 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details10">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-11" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-11" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Medipharm is </span>1.5 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/medipharm/XFQ662">Medipharm</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                37 Limpsfield Road, Sanderstead, South Croydon, CR2 9LA<br>
+                                020 8657 2203
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=37+Limpsfield+Road%2c+Sanderstead%2c+South+Croydon%2c+CR2+9LA&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Medipharm at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details11">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-12" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-12" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+        
+            
+        </ol>
+<div class="nhsuk-care-card nhsuk-care-card--urgent nhsuk-u-reading-width">
+<div class="nhsuk-care-card__heading-container">
+    <h3 class="nhsuk-care-card__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Call 111 if:</span></h3>
+    <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+</div>
+<div class="nhsuk-care-card__content">
+    <p>you need urgent treatment and you can’t find an open pharmacy.</p>
+</div>
+</div>
+
+            <div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+    </main>
+</div>
+
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}

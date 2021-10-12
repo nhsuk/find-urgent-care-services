@@ -1,0 +1,360 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Pregnancy
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+    href: "http://localhost:3000/",
+    text: "Home"
+  })
+}}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-full">
+
+                <div class="nhsuk-u-reading-width">
+
+
+                    <h1>Pregnancy</h1>
+                    <p class="nhsuk-lede-text">
+                        This guide includes all you need to know about trying for a baby, pregnancy, labour and birth.
+                    </p>
+
+
+                </div>
+
+                <article>
+
+
+
+                    <h2 class="nhsuk-u-visually-hidden">Top tasks in Pregnancy</h2>
+                    <ul class="nhsuk-grid-row nhsuk-card-group nhsuk-u-padding-top-0">
+
+                        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content">
+                                    <a class="nhsuk-card__link nhsuk-heading-xs" href="https://www.nhs.uk/pregnancy/finding-out/due-date-calculator/">
+                                        Due date calculator
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+
+                        <li class="nhsuk-grid-column-one-third nhsuk-card-group__item">
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content">
+                                    <a class="nhsuk-card__link nhsuk-heading-xs" href="https://www.nhs.uk/conditions/coronavirus-covid-19/people-at-higher-risk/pregnancy-and-coronavirus/">
+                                        Pregnancy and COVID-19
+                                    </a>
+                                </div>
+                            </div>
+                        </li>
+                    </ul>
+
+
+                    <ul class="nhsuk-grid-row nhsuk-card-group">
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content" style="float:left">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="trying-for-a-baby">
+                                            Trying for a baby
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>Advice about trying for a baby, including planning a pregnancy</p></div>
+
+                                    
+                                        <div class="beta-hub-arrow">
+                                            <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                        </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="having-a-baby-if-you-are-LGBT">
+                                            Having a baby if you’re LGBT+
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>Find out about your options for having a baby if you’re LGBT+</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333" fill="#005eb8"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </li>
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="https://www.nhs.uk/pregnancy/finding-out/">
+                                            Finding out you're pregnant
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>What happens and things to think about when you're first pregnant</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="https://www.nhs.uk/pregnancy/your-pregnancy-care/">
+                                            Your pregnancy care
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>Read about the scans, tests and antenatal care you can have</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="https://www.nhs.uk/pregnancy/keeping-well/">
+                                            Keeping well in pregnancy
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>How to look after yourself and your baby while you're pregnant</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="https://www.nhs.uk/pregnancy/week-by-week/">
+                                            Pregnancy week-by-week
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>Find out what to expect from every week of your pregnancy</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="https://www.nhs.uk/pregnancy/related-conditions/">
+                                            Pregnancy-related conditions
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>What to do about common symptoms, complications and existing conditions</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+
+
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="https://www.nhs.uk/pregnancy/labour-and-birth/">
+                                            Labour and birth
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>How to tell if you're in labour and what happens during labour and birth</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                        <li class="beta-hub-main-topic nhsuk-grid-column-one-half nhsuk-card-group__item">
+
+                            <div class="nhsuk-card nhsuk-card--clickable ">
+                                <div class="nhsuk-card__content beta-card__content">
+                                    <h2 class="nhsuk-card__heading nhsuk-heading-m">
+                                        <a class="nhsuk-card__link" href="https://www.nhs.uk/pregnancy/support/">
+                                            Support
+                                        </a>
+                                    </h2>
+                                    <div class="nhsuk-card__description"><p>Advice for things you might need support with during pregnancy</p></div>
+
+                                    <div class="beta-hub-arrow">
+                                        <svg class="nhsuk-icon beta-icon__chevron-right-circle" xmlns="http://www.w3.org/2000/svg" width="27" height="27" aria-hidden="true"><circle cx="13.333" cy="13.333" r="13.333"></circle><g data-name="Group 1" fill="none" stroke="#fff" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2.667"><path d="M15.438 13l-3.771 3.771"></path><path data-name="Path" d="M11.667 9.229L15.438 13"></path></g></svg>
+                                    </div>
+
+                                </div>
+                            </div>
+
+                        </li>
+
+                    </ul>
+
+
+
+
+
+                    <div class="nhsuk-u-reading-width beta-hub-bottom-content">
+
+                    </div>
+
+
+
+                </article>
+
+            </div>
+        </div>
+
+
+
+    </main>
+</div>
+    {% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}

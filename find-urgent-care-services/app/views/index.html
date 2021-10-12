@@ -1,0 +1,115 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        NHS.UK prototype kit
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <hr>
+
+      <h2>
+        NHS services
+      </h2>
+  
+        <ul>
+          <li>
+              <a href="version1/nhs-services">NHS services hub</a>
+          </li>
+          <li>
+              <a href="version1/services-near-you">Find services near you</a>
+          </li>
+          <li>
+            <a href="version1/find-a-gp">Find a GP</a>
+          </li>
+          <li>
+            <a href="version1/results-gp">Results: GPs near ...</a>
+          </li>
+          <li>
+            <a href="version1/find-a-pharmacy">Find a Pharmacy</a>
+          </li>
+          <li>
+            <a href="version1/results-pharmacies">Results: Pharmacies near ...</a>
+          </li>
+          <li>
+            <a href="version1/service-search">Find a Pharmacy - from breadcrumbs (Services near you)</a>
+            <p>https://www.nhs.uk/service-search</p>
+          </li>
+          <li>
+            <a href="version1/find-urgent-care-services">Find Urgent care services</a>
+          </li>
+          <li>
+            <a href="version1/results-urgent-care-services">Results: Urgent care services near ...</a>
+          </li>
+        </ul>
+
+
+      <!--
+      <h2>
+        Pregnancy LGBT+ version 2
+        </h2>
+  
+        <ul>
+            <li>
+                <a href="version2/pregnancy-hub">Pregnancy hub</a>
+            </li>
+            <li>
+                <a href="version2/having-a-baby-if-you-are-LGBT">Having a baby if you are LGBT+</a>
+            </li>
+            <li>
+                <a href="version2/LGBT-routes-into-parenthood">LGBT+ routes into parenthood</a>
+            </li>
+            <li>
+                <a href="version2/trans-and-non-binary-parents">Trans and non-binary parents</a>
+            </li>
+            <li>
+                <a href="version2/chestfeeding-your-baby">Chestfeeding your baby</a>
+            </li>
+            <li>
+                <a href="version2/testosterone-and-pregnancy">Testosterone and pregnancy</a>  
+            </li>
+            <li>
+              <a href="version2/testosterone-and-pregnancy-v2">Testosterone and pregnancy - v2 (4th October 2021)</a>
+          </li>
+        </ul>
+      -->
+
+      <!-- End of content -->
+
+    </div>
+  </div>
+{% endblock %}

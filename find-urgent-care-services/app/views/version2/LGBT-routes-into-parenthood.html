@@ -1,0 +1,247 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "pregnancy-hub",
+      text: "Pregnancy"
+    }
+  ],
+      href: "having-a-baby-if-you-are-LGBT",
+      text: "Having a baby if you are LGBT+"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+
+                <h1>LGBT+ ways to become a parent</h1>
+
+            </div>
+        </div>
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+
+                    <section>
+                        <p>There are several ways you can become a parent if you are LGBT+, including:</p>
+                        <ul>
+                            <li>IUI (intrauterine insemination)</li>
+                            <li>IVF (in vitro fertilisation)</li>
+                            <li>surrogacy</li>
+                            <li>adoption or fostering</li>
+                        </ul>
+                        <p>IUI and IVF can sometimes be done on the NHS. This depends on things like age and where you live. Check with a GP or <a href="https://www.nhs.uk/service-search/other-services/Clinical-Commissioning-Group/LocationSearch/1">local CCG (clinical commissioning group)</a> to find out what's available in your area.</p>
+                        <p>Surrogacy is not available on the NHS.</p>
+                        <p>All these options can be used by anyone, including single people, same sex couples and people with fertility problems.</p>
+
+                    </section>
+
+                    <section>
+                        <h2>IUI (intrauterine insemination)</h2>
+                        <p><a href="https://www.nhs.uk/conditions/artificial-insemination/">IUI (intrauterine insemination)</a> is also called artificial insemination, or donor insemination.</p>
+                        <p>Sperm is put in the womb of the person getting pregnant. This can be done at home or a licensed fertility clinic. The sperm can be from someone you know or from a sperm bank.</p>
+
+                        <div class="nhsuk-inset-text">
+                            <span class="nhsuk-u-visually-hidden">Information: </span>
+                            <p>In the UK, the HFEA makes sure licensed fertility clinics run safely and legally.</p>
+                            <p><a href="https://www.hfea.gov.uk/choose-a-clinic/clinic-search/">Find a licensed clinic with HFEA's fertility clinic search</a></p>
+                        </div>
+
+                        <p>If you go to a licensed fertility clinic, they will check the sperm for sexually transmitted infections and inherited conditions.</p>
+                        <p>Find out more about <a href="https://www.hfea.gov.uk/donation/donors/home-insemination-with-donor-sperm/">home insemination with donor sperm (HFEA)</a>.</p>
+                    </section>
+
+                    <section>
+                        <h2>IVF (in vitro fertilisation)</h2>
+                        <p><a href="https://www.nhs.uk/conditions/ivf/">IVF</a> is when an egg is removed from the ovaries and fertilised with sperm in a lab. The fertilised egg is then put back in the womb.</p>
+                        <p>IVF can use eggs and sperm from donors, or from the people who want to become parents.</p>
+                        <p>Find out more about <a href="https://www.hfea.gov.uk/treatments/explore-all-treatments/using-donated-eggs-sperm-or-embryos-in-treatment/">using donated egg, sperm or embryos in treatment on the HFEA website</a>.</p>
+                        <p><a href="https://www.hfea.gov.uk/choose-a-clinic/clinic-search/">Find a licensed clinic with HFEA's fertility clinic search</a>.</p>
+                    </section>
+
+                    <section>
+                        <h2>Co-parenting</h2>
+                        <p>This is when 2 or more people team up to conceive and parent children together.</p>
+                        <p>As a co-parent, you will not have sole custody of the child. It is advisable to get legal advice at an early stage of your planning.</p>
+                        <p>There are many details to think about, such as how financial costs will be split.</p>
+                        <p>Find out more about <a href="https://www.stonewall.org.uk/help-advice/parenting-rights/%E2%80%8Bco-parenting-0">co-parenting on the Stonewall website</a>.</p>
+                    </section>
+
+                    <section>
+                        <h2>Adoption or fostering</h2>
+                        <p>You can apply to adopt or foster through a local authority, or an adoption or foster agency. You do not have to live in the local authority you apply to, and you can be single.</p>
+                        <p>You will have to complete an assessment before adopting or fostering, with the help of a social worker and preparation training.</p>
+                        <p>Find out more:</p>
+                        <ul>
+                            <li><a href="https://newfamilysocial.org.uk/">New Family Social: charity for LGBT+ adoptive and foster parents</a></li>
+                            <p>www.newfamilysocial.org.uk</p>
+                            <li><a href="https://www.gov.uk/child-adoption">GOV.UK: child adoption</a></li>
+                            <p>www.gov.uk</p>
+                            <li><a href="https://www.gov.uk/becoming-foster-parent">GOV.UK: becoming a foster parent</a></li>
+                            <p>www.gov.uk</p>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Surrogacy</h2>
+                        <p>Surrogacy is when someone has a baby for people who cannot, or choose not to, get pregnant themselves.</p>
+                        <p>The eggs and sperm can come from donors or from the intended parents. The surrogate can donate their own eggs.</p>
+                        <p>Surrogacy is legal in the UK but it is illegal to advertise for surrogates, and the surrogate cannot be paid a fee.</p>
+                        <p>Find out more:</p>
+                        <ul>
+                            <li><a href="https://www.gov.uk/legal-rights-when-using-surrogates-and-donors">GOV.UK having a child through surrogacy</a></li>
+                            <p>www.gov.uk</p>
+                            <li><a href="https://www.gov.uk/government/publications/having-a-child-through-surrogacy">GOV.UK legal rights of parents and surrogates</a></li>
+                            <p>www.gov.uk</p>
+                        </ul>
+                    </section>
+
+                    <section>
+                        <h2>Who can be the legal parents</h2>
+                        <p>Up to 2 people can be named as legal parents on a child’s birth certificate.</p>
+                        <p>The person who gives birth is always the child’s legal parent and named on the birth certificate.</p>
+                        <p>Who the child's other legal parent can be depends on things like:</p>
+                        <ul>
+                            <li>where and how the baby was conceived (for example, at a clinic or at home, with insemination or by having sex)</li>
+                            <li>if you used a sperm donor, and whether the sperm was from a sperm bank or from someone you know</li>
+                            <li>if the person who gives birth is married or in a civil partnership</li>
+                            <li>if you used a surrogate</li>
+                        </ul>
+
+                        <h3>Parental responsibility</h3>
+                        <p>Having parental responsibility is not the same as being a legal parent.</p>
+                        <p>More than 2 people can have parental responsibility for a child. This means you have a say in important decisions about the child's life, such as where they live or medical treatment.</p>
+
+                        <p>Find out more:</p>
+                        <ul>
+                            <li><a href="https://www.gov.uk/parental-rights-responsibilities">GOV.UK: parental rights and responsibilities: what is parental responsibility?</a></li>
+                            <p>www.gov.uk</p>
+                            <li><a href="https://www.hfea.gov.uk/treatments/explore-all-treatments/becoming-the-legal-parents-of-your-child/">HFEA: becoming the legal parents of your child</a></li>
+                            <p>www.hrea.org.uk</p>
+                            <li>
+                                <a href="https://www.stonewall.org.uk/help-advice/parenting-rights/legal-parenthood-1">Stonewall: legal parenthood</a>
+                                <p>www.stonewall.org.uk</p>
+                            </li>
+                            <li><a href="https://www.gov.uk/legal-rights-when-using-surrogates-and-donors">GOV.UK: surrogacy: legal rights of parents and surrogates</a></li>
+                            <p>www.gov.uk</p>
+                        </ul>
+                    </section>
+
+                </div>
+            </div>
+        </article>
+
+
+        <div class="nhsuk-review-date">
+            <p class="nhsuk-body-s">
+                Page last reviewed: 4 May 2020
+                <br>
+                Next review due: 4 May 2023
+            </p>
+        </div>
+
+    </main>
+</div>
+
+  </div>
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
+

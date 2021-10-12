@@ -1,0 +1,239 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "pregnancy-hub",
+      text: "Pregnancy"
+    },
+    {
+      href: "having-a-baby-if-you-are-LGBT",
+      text: "Having a baby if you are LGBT+"
+    }
+  ],
+      href: "trans-and-non-binary-parents",
+      text: "Trans and non-binary pregnancy"
+})
+}}
+{% endblock %}
+
+{% block content %}
+<div class="nhsuk-width-container">
+    <main class="nhsuk-main-wrapper nhsuk-u-padding-top-0" id="maincontent" lang="en_GB">
+
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+
+                <h1>Testosterone and pregnancy</h1>
+
+            </div>
+        </div>
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+
+                    <section>
+                        <p><b>Testosterone therapy uses a synthetic version of the testosterone hormone. It has a number of medical uses, including the treatment of gender dysphoria in people who want to change how their body looks and works.</b></p>
+                        <p>Testosterone can reduce breast tissue, stop periods, and make hair grow on your face.</p>
+                    </section>
+
+                    <section>
+                        <h2>Testosterone and fertility</h2>
+
+                        <p>If you are taking testosterone and want to get pregnant, talk to the doctor who is prescribing you testosterone.</p>
+                        <p>They can offer advice and may suggest you stop taking testosterone as this should make it more likely you will get pregnant.</p>
+
+                        <p>It is not recommended to take testosterone during pregnancy. This is because taking testosterone may affect your baby's development. Talk to the doctor who is prescribing you testosterone for more information about possible risks to your baby.</p>
+
+                        <div class="nhsuk-warning-callout">
+                          <h2 class="nhsuk-warning-callout__label">
+
+                              <span role="text">
+                                  <span class="nhsuk-u-visually-hidden">Important: </span>
+                                  Testosterone and contraception
+                              </span>
+
+                          </h2>
+                          <p>You can still get pregnant while taking testosterone.</p>
+                          <p>You need to use contraception if there is a possibility you could become pregnant.</p>
+                        </div>
+                    </section>
+
+
+                    <section>
+                        <h2>Testosterone and pregnancy</h2>
+                        <p>Taking testosterone in pregnancy is not recommended.</p>
+
+                        <div class="nhsuk-care-card nhsuk-care-card--non-urgent">
+                            <div class="nhsuk-care-card__heading-container">
+                                <h3 class="nhsuk-care-card__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Non-urgent advice: </span>Contact the doctor who is prescribing your testosterone immediately if:</span></h3>
+                                <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+                            </div>
+                            <div class="nhsuk-care-card__content">
+
+                                <ul>
+                                    <li>you are taking testosterone and you think you are pregnant</li>
+                                </ul>
+                                <p>Do not stop taking testosterone before talking with your GP.</p>
+
+                            </div>
+                        </div>
+
+                        <p>If you stop taking testosterone because you want to get pregnant you will probably start to have periods again. You may also notice changes in your body shape around your hips, chest and thighs.</p>
+                        <p>Your tone of voice and facial hair should be unaffected.</p>
+                        <p>You may find your pregnancy triggers feelings of gender dysphoria.</p>
+                        <p>You may have mood swings during your pregnancy, such as suddenly feeling very irritable or tearful. Mood swings are common in most pregnancies.</p>
+                        <p><a href="https://drafts.nhswebsite-staging.nhs.uk/conditions/pregnancy-guide/things-you-might-need-support/mental-health-support-pregnancy/">Read more advice about mental health in pregnancy</a>.</p>
+
+
+                    </section>
+
+
+                    <section>
+                        <h2>Testosterone and chestfeeding</h2>
+                        <p>If you have taken testosterone in the past then your milk supply may be affected. So you may not be able to chestfeed your baby.</p>
+                        <p>If you can chestfeed and you also decide to start taking testosterone again, your milk will have small amounts of testosterone in it.</p>
+                        <p>It is unclear what, if any, affect this could have on your baby.</p>
+                        <p>It is also important to consider your own wellbeing if you are finding that not taking testosterone is triggering dysphoria.</p>
+                        <p>Talk to your midwife or doctor about any concerns you may have.</p>
+                        <p>Read more information on <a href="chestfeeding-your-baby">chestfeeding</a>.</p>
+                    </section>
+
+
+                </div>
+            </div>
+        </article>
+
+
+        <aside class="nhsuk-grid-column">
+            <div id="sibling-nav" class="app-related-nav beta-hub-sibling-nav nhsuk-u-padding-top-5">
+                <h2 class="app-related-nav__heading nhsuk-u-padding-bottom-3 nhsuk-heading-m">
+                    More in
+                    <a href="trans-and-non-binary-parents">Trans and non-binary pregnancy</a>
+                </h2>
+                <nav role="navigation" class="app-related-nav__nav-section">
+                    <ul class="app-related-nav__list beta-hub-sibling-nav__list">
+
+                        <li class="beta-hub-sibling-nav__item  beta-hub-sibling-nav--current">
+                            Testosterone and pregnancy
+                        </li>
+
+                        <li class="beta-hub-sibling-nav__item">
+                            <a class="app-related-nav__link" href="chestfeeding-your-baby">
+                                Chestfeeding your baby
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+            </div>
+        </aside>
+
+
+        <div class="nhsuk-review-date">
+            <p class="nhsuk-body-s">
+                Page last reviewed: 4 May 2020
+                <br>
+                Next review due: 4 May 2023
+            </p>
+        </div>
+
+
+    </main>
+</div>
+
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
+

@@ -1,0 +1,155 @@
+
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Find pharmacy services
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    }
+  ],
+      href: "services-near-you",
+      text: "Services near you"
+})
+}}
+{% endblock %}
+
+
+
+
+{% block content %}
+<div class="nhsuk-width-container">
+  <main class="" id="main-content">
+      <div class="nhsuk-grid-row">
+          <div class="nhsuk-grid-column-two-thirds">
+  <h1>
+      Find a pharmacy
+  </h1>
+  
+  <div class="nhsuk-inset-text">
+      <span class="nhsuk-u-visually-hidden">Information: </span>
+      <p>Do not go to a pharmacy if you have symptoms of coronavirus (a high temperature, a new, continuous cough or a loss or change to your sense of smell or taste).</p>
+      <p>Use the <a href="https://111.nhs.uk/covid-19/">NHS 111 online coronavirus service</a> to find out what to do</p>
+  </div>
+
+  <form name="ServiceSearchForm" id="service-search-form" method="post" action="/version1/results-pharmacies">
+      <input type="hidden" value="PHA" data-val="true" data-val-required="The ServiceId field is required." id="ServiceId" name="ServiceId">
+      <input type="hidden" value="" id="ParentService" name="ParentService">
+      <input type="hidden" id="UsersLatitude" name="UsersLatitude" value="">
+      <input type="hidden" id="UsersLongitude" name="UsersLongitude" value="">
+      <div class="nhsuk-form-group">
+          <label class="nhsuk-label" for="Location">
+              Enter a town, city or postcode in England
+          </label>
+          <input class="nhsuk-input nhsuk-input--width-20" type="text" id="Location" name="Location" value="">
+      </div>
+      <button class="nhsuk-button nhsuk-u-margin-bottom-4" type="submit">Search</button><br>
+      <button class="nhsuk-button nhsuk-button--secondary geo-locate--button nhsuk-u-margin-bottom-7">Use your location</button>
+     
+      <!--
+      <div class="geo-locate">
+          <p class="geo-locate--searching nhsuk-u-margin-bottom-7"><img src="/service-search/dist/images/loading.gif" alt="">We are searching for your location</p>
+          <p class="geo-locate--error nhsuk-u-margin-bottom-7">We can't find your location. Please try again or enter a town, city or postcode.</p>
+          <p class="geo-locate--denied nhsuk-u-margin-bottom-7">You have not allowed us to use your location. You can change this in your browser settings.</p>
+      </div>
+      -->
+
+          <ul class="nhsuk-list additional-links">
+              <li><a href="https://www.nhs.uk/Service-Search/other-services/pharmacies/internetpharmacies" target="_blank">See all internet pharmacies.</a></li>
+              <li><a href="https://www.nhs.uk/Service-Search/other-services/pharmacies/appliancepharmacies" target="_blank">See all dispensing appliance contractors.</a></li>
+          </ul>
+  <input name="__RequestVerificationToken" type="hidden" value="CfDJ8C0XnBttwtZMjhCsJmTcgtkvAj07vO4J1zkPAkIvawXfD6AMhIBpHzDazYSADB91GA1UxFExcj2G-NJYK5YAlu5ffaljV_nk3A-jNEz1tpK4b3GHylKDsB0HfIqN523gdxRTKN5fkKUEk0ted33WN6E"></form>
+
+
+      </div>
+    </div>
+  </main>
+</div>
+    {% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}

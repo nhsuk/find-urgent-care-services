@@ -1,0 +1,887 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+  Results for Urgent care services
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+{{
+ header({
+    "showNav": "true",
+    "showSearch": "true",
+    "primaryLinks": [
+      {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+      },
+      {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+      },
+      {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+      },
+      {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+      },
+      {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+      },
+      {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+      }
+    ]
+  })
+}}
+{% endblock %}
+
+
+{% block beforeContent %}
+{{
+ breadcrumb({
+  items: [
+    {
+      href: "http://localhost:3000/",
+      text: "Home"
+    },
+    {
+      href: "services-near-you",
+      text: "Services near you"
+    }
+  ],
+      href: "find-urgent-care-services",
+      text: "Find Urgent care services"
+})
+}}
+{% endblock %}
+
+
+
+{% block content %}
+
+<div class="nhsuk-width-container">
+    <main class="" id="main-content">
+        
+<div class="nhsuk-grid-row">
+<div class="nhsuk-grid-column-full">
+    <h1 class="nhsuk-u-reading-width nhsuk-u-margin-bottom-4">
+        Urgent care services near W1B 2AE
+    </h1>
+
+
+    <div class="results">
+        <p class="nhsuk-u-margin-bottom-6"> Showing all Urgent care services. <a href="#">Only show Urgent care services open now.</a> </p>
+        
+        <hr class=".horizontal-line.results">
+        
+        <ol class="nhsuk-list results service-results">
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">University College Hospital is </span>0.7 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/hobbs-pharmacy/XFXC31">University College Hospital</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                University College Hospital, 235 Euston Road, London, NW1 2BU<br>
+                                020 3456 7890
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=Purley+War+Memorial+Hospital%2c+856+Brighton+Road%2c+Purley%2c+Croydon%2c+CR8+2YL&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> University College Hospital at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                <div class="nhsuk-grid-column-one-half">
+                    <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                        <p class="callout--info__mesg">This service is for anyone aged 18 or over</p>
+                        <p class="callout--info__mesg">Open 24 hours</p>
+                        <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details5">
+                            <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="false">
+                                <span class="nhsuk-details__summary-text">
+                                    Opening times
+                                </span>
+                            </summary>
+                            <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-6" aria-hidden="true">
+                                <div class="openingTimes-panel__content">
+                                    <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                        <tbody><tr>
+                                            <th rowspan="1">Monday</th>
+                                            <td>
+                                                0:00 am - 23:59 pm<br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="1">Tuesday</th>
+                                            <td>
+                                                0:00 am - 23:59 pm<br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="1">Wednesday</th>
+                                            <td>
+                                                0:00 am - 23:59 pm<br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="1">Thursday</th>
+                                            <td>
+                                                0:00 am - 23:59 pm<br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="1">Friday</th>
+                                            <td>
+                                                0:00 am - 23:59 pm<br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="1">Saturday</th>
+                                            <td>
+                                                0:00 am - 23:59 pm<br>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <th rowspan="1">Sunday</th>
+                                            <td>
+                                                0:00 am - 23:59 pm<br>
+                                            </td>
+                                        </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+                            </div>
+                        </details>
+                    </section>
+                </div>
+                </details>
+
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">St Mary's Hospital (HQ) is </span>1.3 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/orion-pharmacy/XFJY76">St Mary's Hospital (HQ)</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                Praed Street, London, W2 1NY<br>
+                                020 3312 6666
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=939+Brighton+Road%2c+Purley%2c+Surrey%2c+CR8+2BP&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for St Mary's Hospital (HQ) at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">This service is for anyone aged 16 or over (24 hours)</p>
+                            <p class="callout--info__mesg">This service is for children aged 1 to 5 (8am to 8pm)</p>
+                            <p class="callout--info__mesg">Open 24 hours</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details5">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-6" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                            <tbody><tr>
+                                                <th rowspan="1">Monday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Tuesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Wednesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Thursday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Friday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Saturday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Sunday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Chelsea and Westminster Hospital is </span>2.7 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/boots/XFJA14">Chelsea and Westminster Hospital</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                369 Fulham Road, London, SW10 9NH<br>
+                                020 3315 8000
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=15+High+St%2c+Purley%2c+Surrey%2c+CR8+2AF&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Chelsea and Westminster Hospital at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">This service is for people of all ages</p>
+                            <p class="callout--info__mesg">Open 24 hours</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details5">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-6" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                            <tbody><tr>
+                                                <th rowspan="1">Monday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Tuesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Wednesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Thursday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Friday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Saturday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Sunday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Charing Cross Hospital is </span>3.9 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/tesco-stores-limited/XFP526">Charing Cross Hospital</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                Fulham Palace Road, London, W6 8RF <br>
+                                020 3311 1234
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=Tesco+Pharmacy%2c+8+Purley+Road%2c+Purley%2c+CR8+2HA&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Charing Cross Hospital at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">This service is for people of all ages</p>
+                            <p class="callout--info__mesg">Open 24 hours</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details5">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-6" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                            <tbody><tr>
+                                                <th rowspan="1">Monday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Tuesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Wednesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Thursday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Friday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Saturday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Sunday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Homerton University Hospital is </span>4.8 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/foxley-lane-pharmacy/XFQ724">Homerton University Hospital</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                Homerton Row, Homerton Row, London, Greater London, E9 6SR <br>
+                                020 8510 5555
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=32+Foxley+Lane%2c+Purley%2c+Surrey%2c+CR8+3EE&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Homerton University Hospital at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">This service is for people of all ages</p>
+                            <p class="callout--info__mesg">Open 24 hours</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details5">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-6" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                            <tbody><tr>
+                                                <th rowspan="1">Monday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Tuesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Wednesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Thursday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Friday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Saturday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Sunday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                    </table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Whipps Cross Hospital is </span>7.7 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/riddlesdown-pharmacy/XFD662">Whipps Cross Hospital</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                Whipps Cross Road, London, E11 1NR<br>
+                                020 8539 5522
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=104+Lower+Barn+Road%2c+Purley%2c+Surrey%2c+CR8+1HR&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Whipps Cross Hospital at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">This service is for anyone aged 5 or over</p>
+                            <p class="callout--info__mesg">Open 24 hours</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details5">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-6" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-6" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                            <tbody><tr>
+                                                <th rowspan="1">Monday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Tuesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Wednesday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Thursday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Friday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Saturday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th rowspan="1">Sunday</th>
+                                                <td>
+                                                    0:00 am - 23:59 pm<br>
+                                                </td>
+                                            </tr>
+                                            </tbody>
+                                        </table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Newham Hospital is </span>10.9 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/mccoig-pharmacy/XFLW45">Newham Hospital</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                367 Brighton Road, South Croydon, Croydon, Surrey, CR2 6ES<br>
+                                020 8688 3253
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=367+Brighton+Road%2c+South+Croydon%2c+Croydon%2c+Surrey%2c+CR2+6ES&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Newham Hospital at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">This service is for anyone aged 5 or over</p>
+                            <p class="callout--info__mesg">Open until 9:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details6">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-7" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-7" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+                                                        9:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+                                                        9:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+                                                        9:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+                                                        9:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+                                                        9:00 am - 9:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+                                                        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+                                                        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Ealing Hospital is </span>11.9 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/makepeace-and-jackson/XFK170">Ealing Hospital</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                7 Station Parade, Sanderstead Road, Sanderstead, South Croydon, CR2 0PH<br>
+                                020 8657 0221
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=7+Station+Parade%2c+Sanderstead+Road%2c+Sanderstead%2c+South+Croydon%2c+CR2+0PH&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Ealing Hospital at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 6:00 pm today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details7">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-8" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-8" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+                                                        9:00 am - 6:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+                                                        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+                                                        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+            <li class="results__item nhsuk-u-margin-bottom-0 nhsuk-u-padding-top-5">
+                <div class="nhsuk-grid-row results__details nhsuk-list-results">
+                    <div class="nhsuk-grid-column-one-half nhsuk-u-margin-bottom-5">
+                        <div>
+                            <p class="nhsuk-body-s nhsuk-u-margin-bottom-0"><span class="nhsuk-u-visually-hidden">Beckenham Beacon Urgent Care Centre is </span>12.1 miles away</p>
+                            <h2 class="results__name nhsuk-u-padding-top-1"><a href="/services/pharmacy/zina-chemist/XFVH66">Beckenham Beacon Urgent Care Centre</a></h2>
+                            <p class="nhsuk-list nhsuk-u-margin-bottom-2">
+                                379-397 Croydon Road, Beckenham, Kent, BR3 3QL<br>
+                                01689 866 037
+                            </p>
+                            <ul class="nhsuk-list nhsuk-u-margin-bottom-0">
+                            <li class="results__item__link">
+                                <a href="http://maps.google.com/maps/dir/?api=1&amp;origin=51.340452680738224,-0.1104571824868214&amp;destination=76-78+Godstone+Road%2c+Kenley%2c+Croydon%2c+London%2c+CR8+5AA&amp;t=m">Map and directions</a>
+                                <span class="nhsuk-u-visually-hidden"> for Beckenham Beacon Urgent Care Centre at </span>
+                            </li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="nhsuk-grid-column-one-half">
+                        <section class="result-panel nhsuk-panel nhsuk-u-margin-top-0">
+                            <p class="callout--info__mesg">Open until 9:00 am today</p>
+                            <details class="nhsuk-details openingTimes-panel" nhsuk-polyfilled="true" id="nhsuk-details8">
+                                <summary class="nhsuk-details__summary" role="button" aria-controls="details-content-9" tabindex="0" aria-expanded="false">
+                                    <span class="nhsuk-details__summary-text">
+                                        Opening times
+                                    </span>
+                                </summary>
+                                <div class="nhsuk-details__text nhsuk-u-padding-left-0 nhsuk-u-padding-right-0 nhsuk-u-padding-bottom-0" id="details-content-9" aria-hidden="true">
+                                    <div class="openingTimes-panel__content">
+                                        <table class="openingTimes nhsuk-u-margin-bottom-0">
+                                                <tbody><tr>
+                                                    <th rowspan="1">Monday</th>
+                                                    <td>
+                                                        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Tuesday</th>
+                                                    <td>
+                                                        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Wednesday</th>
+                                                    <td>
+                                                        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Thursday</th>
+                                                    <td>
+                                                        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Friday</th>
+                                                    <td>
+                                                        9:00 am - 6:30 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Saturday</th>
+                                                    <td>
+                                                        9:00 am - 1:00 pm<br>
+                                                    </td>
+                                                </tr>
+                                                <tr>
+                                                    <th rowspan="1">Sunday</th>
+                                                    <td>
+                                                        Closed<br>
+                                                    </td>
+                                                </tr>
+                                        </tbody></table>
+                                    </div>
+                                </div>
+                            </details>
+                        </section>
+                    </div>
+                </div>
+            </li>
+   
+            
+        </ol>
+<div class="nhsuk-care-card nhsuk-care-card--urgent nhsuk-u-reading-width">
+<div class="nhsuk-care-card__heading-container">
+    <h3 class="nhsuk-care-card__heading"><span role="text"><span class="nhsuk-u-visually-hidden">Urgent advice: </span>Call 111 if:</span></h3>
+    <span class="nhsuk-care-card__arrow" aria-hidden="true"></span>
+</div>
+<div class="nhsuk-care-card__content">
+    <p>you need urgent treatment and you can’t find an Urgent care service.</p>
+</div>
+</div>
+
+            <div>
+    </div>
+    </div>
+</div>
+</div>
+
+
+    </main>
+</div>
+
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- More info and code for the footer can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+{{
+ footer({
+    "links": [
+      {
+        "URL": "#",
+        "label": "NHS sites"
+      },
+      {
+        "URL": "#",
+        "label": "About us"
+      },
+      {
+        "URL": "#",
+        "label": "Contact us"
+      },
+      {
+        "URL": "#",
+        "label": "Profile editor login"
+      },
+      {
+        "URL": "#",
+        "label": "Site map"
+      },
+      {
+        "URL": "#",
+        "label": "Accessibility statement"
+      },
+      {
+        "URL": "#",
+        "label": "Our policies"
+      },
+      {
+        "URL": "#",
+        "label": "Cookies"
+      }
+    ]
+  })
+}}
+{% endblock %}
