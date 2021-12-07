@@ -1,0 +1,339 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      }
+      ],
+        href: "/",
+        text: "Health A to Z"
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+<div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+        <h1>
+            <span role="text">Overview
+                <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                    <span class="nhsuk-u-visually-hidden"> - </span>
+                    Hormone replacement therapy (HRT)
+                </span>
+            </span>
+        </h1>
+
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+            <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+            <ol class="nhsuk-contents-list__list">
+
+                <li class="nhsuk-contents-list__item" aria-current="page">
+                    <span class="nhsuk-contents-list__current">Overview</span>
+
+                </li>
+
+                <li class="nhsuk-contents-list__item">
+                    <a class="nhsuk-contents-list__link"
+                        href="hormone-replacement-therapy-hrt-types">Types</a>                
+                </li>
+
+                <li class="nhsuk-contents-list__item">
+                    <a class="nhsuk-contents-list__link"
+                        href="hormone-replacement-therapy-hrt-side-effects">Side effects</a>
+                </li>
+
+                <li class="nhsuk-contents-list__item">
+                    <a class="nhsuk-contents-list__link"
+                        href="hormone-replacement-therapy-hrt-risks">Benefits and risks</a>
+                </li>
+
+                <li class="nhsuk-contents-list__item">
+                    <a class="nhsuk-contents-list__link"
+                        href="hormone-replacement-therapy-hrt-alternatives">Alternatives</a>
+                </li>
+
+            </ol>
+        </nav>
+
+    </div>
+</div>
+
+
+
+    <article>
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+
+                <section>
+                    <p><b>Hormone replacement therapy (HRT) is a treatment to relieve symptoms of</b> <a
+                            href="/conditions/menopause/"><b>the&nbsp;menopause</b></a><b>. It replaces hormones that
+                            are at a lower level as you approach the&nbsp;menopause.</b></p>
+                </section>
+
+                <section>
+                    <h2>Benefits&nbsp;of HRT</h2>
+                    <p>The main benefit of HRT is that it can help relieve most of the <a
+                            href="/conditions/menopause/symptoms/">menopausal symptoms</a>, such as:</p>
+                    <ul>
+                        <li><a href="/conditions/menopause/hot-flushes/">hot flushes</a></li>
+                        <li><a href="/conditions/night-sweats/">night sweats</a></li>
+                        <li>mood swings</li>
+                        <li><a href="/conditions/vaginal-dryness/">vaginal dryness</a></li>
+                        <li><a href="/conditions/loss-of-libido#getting-older-and-the-menopause">reduced sex drive</a>
+                        </li>
+                    </ul>
+                    <p>Many of these symptoms pass after a few years, but they can&nbsp;be unpleasant and taking HRT can
+                        offer relief for many women.</p>
+                    <p>It&nbsp;can also help prevent weakening of the bones <a
+                            href="/conditions/osteoporosis/">(osteoporosis)</a>, which is more common after the
+                        menopause.</p>
+                </section>
+
+
+                <section>
+                    <h2>Risks of HRT</h2>
+                    <p>Some types of HRT can increase your risk of breast cancer.</p>
+                    <p>The benefits of HRT are generally believed to outweigh the risks. But speak to a GP if you have
+                        any concerns about taking HRT.</p>
+                    <p>Read more about&nbsp;the&nbsp;<a href="/conditions/hormone-replacement-therapy-hrt/risks/">risks
+                            of HRT</a>.</p>
+                </section>
+
+
+                <section>
+                    <h2>How&nbsp;to get started on HRT</h2>
+                    <p>Speak to a GP if you're interested in starting HRT.</p>
+                    <p>You can usually begin HRT as soon as&nbsp;you start experiencing menopausal symptoms and will not
+                        usually need to have any tests first.</p>
+                    <p>A GP can explain the&nbsp;different types of HRT&nbsp;available and help you choose one that's
+                        suitable for you.</p>
+                    <p>You'll usually start with a low dose, which may be increased at a later stage. It may take a few
+                        weeks to feel the effects of treatment and there may be some&nbsp;side effects at first.</p>
+                    <p>A GP will usually recommend trying treatment for 3 months to see if it helps. If it does not,
+                        they may suggest changing your dose, or changing the type of HRT you're taking.</p>
+                </section>
+
+                <section>
+                     <h2>Who&nbsp;can take HRT</h2>
+                    <p>Most women can have HRT if they're having symptoms associated with the menopause.</p>
+                    <p>But&nbsp;HRT may not be suitable if you:</p>
+                    <ul>
+                        <li>have a history of <a href="/conditions/breast-cancer/">breast cancer</a>,&nbsp;<a
+                                href="/conditions/ovarian-cancer/">ovarian cancer</a> or&nbsp;<a
+                                href="/conditions/womb-cancer/">womb cancer</a></li>
+                        <li>have a history of&nbsp;<a href="/conditions/blood-clots/">blood clots</a></li>
+                        <li>have untreated&nbsp;<a href="/conditions/high-blood-pressure-hypertension/">high blood
+                                pressure</a>&nbsp;–&nbsp;your blood pressure will need to be controlled before you can
+                            start HRT</li>
+                        <li>have&nbsp;<a href="/conditions/non-alcoholic-fatty-liver-disease/">liver disease</a></li>
+                        <li>are pregnant&nbsp;– it's still possible to get pregnant while taking HRT, so you should use
+                            contraception&nbsp;until 2 years after your last period if you're under 50, or for 1 year
+                            after the age of 50</li>
+                    </ul>
+                    <p>In&nbsp;these circumstances,&nbsp;alternatives to HRT&nbsp;may be recommended instead.</p>
+
+                </section>
+
+                <section>
+                    <h2>Types&nbsp;of HRT</h2>
+                    <p>There are many different types of HRT and finding the right 1 for you can be difficult.</p>
+                    <p>There are different:</p>
+                    <ul>
+                        <li>HRT hormones&nbsp;– most&nbsp;women take a combination of the hormones oestrogen and
+                            progestogen, although women who do not have a womb can take oestrogen on its own</li>
+                        <li>ways&nbsp;of taking HRT&nbsp;– including tablets, skin patches, gels and vaginal creams,
+                            pessaries or rings</li>
+                        <li>HRT treatment plans&nbsp;– HRT medicine may be taken without stopping, or used in cycles
+                            where you take oestrogen without stopping but only take progestogen every few weeks</li>
+                    </ul>
+                    <p>A GP can give you advice to help you choose which type is best for you.&nbsp;You may need to try
+                        more than 1 type before you find 1 that works best.</p>
+                    <p>Find out more about the different <a
+                            href="/conditions/hormone-replacement-therapy-hrt/types/">types of&nbsp;HRT</a>.</p>
+                </section>
+
+                <section>
+                    <h2>Stopping&nbsp;HRT</h2>
+                    <p>There's no limit on how long you can take HRT, but talk to a GP about how long they recommend you
+                        take the treatment.</p>
+                    <p>Most women&nbsp;stop taking&nbsp;it&nbsp;once their menopausal symptoms pass, which is usually
+                        after a few years.</p>
+                    <p>Women who take HRT for more than 1 year have a higher risk of breast cancer than women who never
+                        use HRT. The risk is linked to all types of HRT except vaginal oestrogen.</p>
+                    <p>The increased risk of breast cancer falls after you stop taking HRT, but some increased risk
+                        remains for more than 10 years compared to women who have never used HRT.</p>
+                    <p>When you decide to stop, you can choose to do so suddenly or gradually.</p>
+                    <p>Gradually decreasing your HRT dose is usually recommended because it's less likely to cause your
+                        symptoms to come back in the short term.</p>
+                    <p>Contact a GP if you have symptoms that persist for several months after you stop HRT, or if you
+                        have particularly severe symptoms. You may need to start HRT again.</p>
+                </section>
+
+
+                <section>
+
+                    <h2>Side effects of HRT</h2>
+                    <p>As with any medicine, HRT can cause side effects. But these will usually pass within 3 months of
+                        starting treatment.</p>
+                    <p>Common side effects include:</p>
+                    <ul>
+                        <li>breast tenderness</li>
+                        <li><a href="/conditions/headaches/">headaches</a></li>
+                        <li>feeling sick</li>
+                        <li><a href="/conditions/indigestion/">indigestion</a></li>
+                        <li><a href="/conditions/stomach-ache/">abdominal (tummy) pain</a></li>
+                        <li>vaginal bleeding</li>
+                    </ul>
+
+
+                </section>
+
+
+
+                <section>
+                    <h2>Alternatives&nbsp;to HRT</h2>
+                    <p>If you're unable to&nbsp;take HRT or decide not to,&nbsp;you may want to consider
+                        alternative&nbsp;ways of controlling your menopausal symptoms.</p>
+                    <p>Alternatives to HRT include:</p>
+                    <ul>
+                        <li>lifestyle measures.&nbsp;such as <a href="/live-well/exercise/">exercising regularly</a>,
+                            eating a <a href="/live-well/eat-well/">healthy diet</a>, cutting down on coffee, <a
+                                href="/live-well/alcohol-support/tips-on-cutting-down-alcohol/">alcohol</a> and spicy
+                            foods, and&nbsp;<a
+                                href="/live-well/quit-smoking/10-self-help-tips-to-stop-smoking/">stopping smoking</a>
+                        </li>
+                        <li>tibolone&nbsp;–&nbsp;a medicine that's similar to combined HRT (oestrogen and progestogen),
+                            but may not be as effective and is only suitable for&nbsp;women who had their last period
+                            more than 1 year ago</li>
+                        <li><a href="/conditions/antidepressants/">antidepressants</a>&nbsp;– some antidepressants can
+                            help with hot flushes and night sweats, although they can also cause unpleasant side effects
+                            such as agitation and&nbsp;<a href="/conditions/dizziness/">dizziness</a></li>
+                        <li>clonidine&nbsp;– a non-hormonal medicine&nbsp;that&nbsp;may help reduce hot flushes and
+                            night sweats in some women, although any benefits are likely to be small</li>
+                    </ul>
+                    <p>Several remedies (such as bioidentical&nbsp;hormones) are claimed to help with&nbsp;menopausal
+                        symptoms, but these are not recommended because it's not clear how safe and effective they are.
+                    </p>
+                    <p>Bioidentical hormones are not the same as body identical hormones. Body identical hormones, or
+                        micronised progesterone, can be prescribed to treat menopausal symptoms.</p>
+                    <p>Read more about <a href="/conditions/hormone-replacement-therapy-hrt/alternatives/">alternatives
+                            to HRT</a>.</p>
+                </section>
+
+
+                <div>
+                    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                        Page last reviewed: 09 September 2019<br>
+                        Next review due: 09 September 2022
+                    </p>
+                </div>
+
+                <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+                    <ul class="nhsuk-list nhsuk-pagination__list">
+
+
+                        <li class="nhsuk-pagination-item--next">
+                            <a class="nhsuk-pagination__link nhsuk-pagination__link--next"
+                                href="hormone-replacement-therapy-hrt-types">
+                                <span class="nhsuk-pagination__title">Next</span>
+                                <span class="nhsuk-u-visually-hidden">:</span>
+                                <span class="nhsuk-pagination__page">Types</span>
+                                <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                    <path
+                                        d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </article>
+
+
+{% endblock %}
+
+
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/" class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/" class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/" class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx" class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/" class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/" class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/" class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}

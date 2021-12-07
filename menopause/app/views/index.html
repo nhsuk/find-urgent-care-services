@@ -1,0 +1,95 @@
+<!-- Use this page as the index for your project -->
+
+<!-- ADDING CUSTOM CSS - Add your custom CSS or Sass in /app/assets/sass/main.scss -->
+
+<!-- Extends the layout from /views/layout.html -->
+{% extends 'layout.html' %}
+<!-- 
+  In /views/layout.html you can:
+    - change the header and footer 
+    - add custom CSS and JavaScript
+-->
+
+<!-- Set the page title -->
+{% block pageTitle %}
+  NHS.UK prototype kit
+{% endblock %}
+
+<!-- For adding a breadcrumb -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/breadcrumbs -->
+{% block beforeContent %}
+{% endblock %}
+
+<!-- For adding a back link -->
+<!-- Code examples can be found at https://service-manual.nhs.uk/design-system/components/back-link -->
+{% block outerContent %}
+{% endblock %}
+
+<!-- For adding page content -->
+<!-- Page layout code can be found at https://service-manual.nhs.uk/design-system/styles/layout -->
+{% block content %}
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <!-- Change the page title here -->
+      <h1>
+        NHS.UK prototype kit
+        <span class="nhsuk-caption-xl nhsuk-caption--bottom">Version {{version}}</span>
+      </h1>
+
+      <!-- Add your content here -->
+      <!-- Styles and components can be found at https://service-manual.nhs.uk/design-system -->
+
+      <hr>
+
+      <h2>
+        Menopause (Live:3 Dec 2021)
+        </h2>
+  
+        <ul>
+            <li>
+              <a href="version1/menopause">Overview</a>
+            </li>
+            <li>
+              <a href="version1/symptoms">Symptoms</a>
+            </li>
+            <li>
+              <a href="version1/treatment">Treatment</a>
+            </li>
+
+            <br>
+            <li>
+              <a href="version1/early-menopause">Early Menopause</a>
+            </li>   
+  
+            <li>
+              <a href="version1/hot-flushes">Hot flushes</a>
+            </li>            
+
+           <br>
+            <li>
+              <a href="version1/hormone-replacement-therapy-hrt">Hormone Replacement Therapy HRT / Overview ------------------x§</a>
+            </li>
+            <li>
+              <a href="version1/hormone-replacement-therapy-hrt-types">Hormone Replacement Therapy HRT / Types</a>
+            </li>
+            <li>
+              <a href="version1/hormone-replacement-therapy-hrt-side-effects">Hormone Replacement Therapy HRT / Side effects</a>
+            </li>
+            <li>
+              <a href="version1/hormone-replacement-therapy-hrt-risks">Hormone Replacement Therapy HRT / Benefits & risks</a>
+            </li>
+            <li>
+              <a href="version1/hormone-replacement-therapy-hrt-alternatives">Hormone Replacement Therapy HRT / Alternatives</a>
+            </li>
+        </ul>
+
+      <hr>
+
+
+
+
+
+    </div>
+  </div>
+{% endblock %}

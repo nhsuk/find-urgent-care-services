@@ -1,0 +1,251 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      },
+      {
+        href: "/",
+        text: "Health A to Z"
+      }
+    ],
+        href: "menopause",
+        text: "Menopause"
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+
+        <h1>
+          <span role="text">Symptoms
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden"> - </span>
+              Menopause
+            </span>
+          </span>
+        </h1>
+
+
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+          <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+          <ol class="nhsuk-contents-list__list">
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="menopause">Overview</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item" aria-current="page">
+              <span class="nhsuk-contents-list__current">Symptoms</span>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="treatment">Treatment</a>
+            </li>
+
+          </ol>
+        </nav>
+
+      </div>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+
+          <section>
+            <p><b>Most women will&nbsp;experience some symptoms around the menopause. The duration and&nbsp;severity of
+                these&nbsp;symptoms varies from woman to woman.</b></p>
+            <p>Symptoms&nbsp;usually start&nbsp;a few months or years before&nbsp;your <a
+                href="/conditions/periods/">periods</a> stop, known as&nbsp;the perimenopause, and&nbsp;can persist for
+              some time afterwards.</p>
+            <p>On average, most symptoms last around 4 years from your last period. However, around 1 in every 10 women
+              experience them for up to 12 years.</p>
+            <p>If you experience the menopause suddenly rather than gradually&nbsp;–&nbsp;for example, as a result of
+              cancer treatment&nbsp;–&nbsp;your symptoms may be worse.</p>
+          </section>
+
+
+          <section>
+            <h2>Changes&nbsp;to your periods</h2>
+            <p>The first sign of the menopause&nbsp;is usually a change in the normal pattern of your periods.</p>
+            <p>You may start having either unusually light or <a href="/conditions/heavy-periods/">heavy periods</a>.
+            </p>
+            <p>The frequency of your periods may also be affected. You may have them every 2 or 3 weeks, or you may not
+              have them for months at a time.</p>
+            <p>Eventually, you'll stop having periods altogether.</p>
+          </section>
+
+
+          <section>
+            <h2>Common menopausal symptoms</h2>
+            <p>About 8 in every 10 women will have&nbsp;additional symptoms for some time before and after their periods
+              stop.</p>
+            <p>These&nbsp;can have a significant impact on daily life for some women.</p>
+            <p>Common symptoms&nbsp;include:</p>
+            <ul>
+              <li><a href="/conditions/menopause/hot-flushes/">hot flushes</a> – short, sudden feelings of heat, usually
+                in the face, neck and chest, which can make your skin red and sweaty</li>
+              <li><a href="/conditions/night-sweats/">night sweats</a>&nbsp;– hot flushes that occur at night</li>
+              <li><a href="/conditions/insomnia/">difficulty sleeping</a>&nbsp;– this may make you feel tired and
+                irritable during the day</li>
+              <li>a <a href="/conditions/loss-of-libido/">reduced sex drive (libido)</a></li>
+              <li>problems with memory and concentration</li>
+              <li><a href="/conditions/vaginal-dryness/">vaginal dryness</a>&nbsp;and&nbsp;pain, itching or discomfort
+                during sex</li>
+              <li><a href="/conditions/headaches/">headaches</a></li>
+              <li>mood changes, such as&nbsp;<a
+                  href="/conditions/stress-anxiety-depression/low-mood-and-depression/">low mood</a> or <a
+                  href="/conditions/stress-anxiety-depression/understanding-panic/">anxiety</a></li>
+              <li><a href="/conditions/heart-palpitations/">palpitations</a>&nbsp;– heartbeats that suddenly become more
+                noticeable</li>
+              <li>joint stiffness, aches and pains</li>
+              <li>reduced muscle mass</li>
+              <li>recurrent <a href="/conditions/urinary-tract-infections-utis/">urinary tract infections (UTIs)</a>
+              </li>
+            </ul>
+            <p>The menopause can also increase your risk of developing certain other problems, such as <a
+                href="/conditions/osteoporosis/">weak bones (osteoporosis)</a>.</p>
+            <p>See your GP if you're finding your symptoms particularly troublesome, as treatments are available.</p>
+            <p><a href="/conditions/menopause/treatment/">Read about how to manage symptoms of the menopause</a></p>
+          </section>
+
+
+          <div>
+            <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+              Page last reviewed: 29 August 2018<br>
+              Next review due: 29 August 2021
+            </p>
+          </div>
+
+
+          <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+            <ul class="nhsuk-list nhsuk-pagination__list">
+
+              <li class="nhsuk-pagination-item--previous">
+                <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="menopause">
+                  <span class="nhsuk-pagination__title">Previous</span>
+                  <span class="nhsuk-u-visually-hidden">:</span>
+                  <span class="nhsuk-pagination__page">Menopause</span>
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    aria-hidden="true" width="34" height="34">
+                    <path
+                      d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+
+              <li class="nhsuk-pagination-item--next">
+                <a class="nhsuk-pagination__link nhsuk-pagination__link--next" href="treatment">
+                  <span class="nhsuk-pagination__title">Next</span>
+                  <span class="nhsuk-u-visually-hidden">:</span>
+                  <span class="nhsuk-pagination__page">Treatment</span>
+                  <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                    aria-hidden="true" width="34" height="34">
+                    <path
+                      d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
+                    </path>
+                  </svg>
+                </a>
+              </li>
+
+            </ul>
+          </nav>
+
+        </div>
+
+      </div>
+    </article>
+
+
+
+
+
+
+
+
+
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/" class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/" class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/" class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx" class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/" class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/" class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/" class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}

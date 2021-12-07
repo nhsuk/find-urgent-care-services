@@ -1,0 +1,274 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+{{
+header({
+"showNav": "true",
+"showSearch": "true",
+"primaryLinks": [
+{
+"url": "https://www.nhs.uk/conditions/",
+"label" : "Health A-Z "
+},
+
+{
+'url': 'https://www.nhs.uk/live-well/',
+'label' : 'Live Well'
+},
+
+{
+'url': 'https://www.nhs.uk/mental-health/',
+'label' : 'Mental health'
+},
+
+{
+'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+'label' : 'Care and support'
+},
+
+{
+'url': 'pregnancy-hub/',
+'label' : 'Pregnancy'
+},
+
+{
+'url': 'https://www.nhs.uk/nhs-services/',
+'label': 'NHS services'
+}
+]
+})
+}}
+
+{% endblock %}
+
+{% block beforeContent %}
+{{ breadcrumb({
+items: [
+{
+href: "/",
+text: "Home"
+},
+{
+href: "/",
+text: "Health A to Z"
+}
+],
+href: "hormone-replacement-therapy-hrt",
+text: "Hormone replacement therapy (HRT) "
+}) }}
+{% endblock %}
+
+
+
+{% block content %}
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+            <h1>
+                <span role="text">Benefits and risks 
+                    <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                        Hormone replacement therapy (HRT)
+                    </span>
+                </span>
+            </h1>
+
+            <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+                <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+                <ol class="nhsuk-contents-list__list">
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                        href="hormone-replacement-therapy-hrt">Overview</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-types">Types</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-side-effects">Side effects</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <span class="nhsuk-contents-list__current">Benefits and risks</span>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-alternatives">Alternatives</a>
+                    </li>
+
+                </ol>
+            </nav>
+
+        </div>
+    </div>
+
+
+<article>
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+            <section>
+                <p><b>When deciding whether to have&nbsp;hormone replacement therapy (HRT), it's important to understand
+                        the benefits and risks.</b></p>
+                <p>Many studies on HRT&nbsp;published over the past 15 years&nbsp;highlight the potential risks. As a
+                    result, some women and doctors have been reluctant to use HRT.</p>
+                <p>But recent evidence says that the risks of HRT are small and are usually outweighed by the benefits.
+                </p>
+            </section>
+
+
+            <section>
+                <h2>Benefits of HRT</h2>
+                <p>The main benefit of HRT is that it can help relieve most <a
+                        href="https://www.nhs.uk/conditions/menopause/symptoms/">menopausal symptoms</a>, such as:</p>
+                <ul>
+                    <li>hot flushes</li>
+                    <li>night sweats</li>
+                    <li>mood swings</li>
+                    <li>vaginal dryness</li>
+                    <li>reduced sex drive</li>
+                </ul>
+                <p>HRT can also help prevent thinning of the bones, which can lead to fracture <a
+                        href="https://www.nhs.uk/conditions/osteoporosis/">(osteoporosis)</a>. Osteoporosis is more
+                    common after the menopause.</p>
+            </section>
+
+
+
+            <section>
+                <h2>Risks of HRT</h2>
+                <p>The benefits of HRT usually outweigh the risks for most women.</p>
+                <p>The risks are usually very small, and depend on the type of HRT you take, how long you take it and
+                    your own health risks.</p>
+                <p>Speak to a GP if you're thinking about starting HRT or you're already taking it, and you're worried
+                    about any risks.</p>
+                <h3>Breast cancer</h3>
+                <p>There is little or no change in the risk of breast cancer if you take oestrogen-only HRT.</p>
+                <p>Combined HRT can be associated with a small increase in the risk of breast cancer.</p>
+                <p>The increased risk is related to how long you take HRT, and it falls after you stop taking it.</p>
+                <p>Because of the&nbsp;risk of breast cancer, it's especially important to attend all your&nbsp;<a
+                        href="/conditions/breast-cancer-screening/">breast cancer screening</a> appointments if you're
+                    taking HRT.</p>
+            </section>
+
+
+            <section>
+                <h3>Blood&nbsp;clots</h3>
+                <p>The evidence shows that:</p>
+                <ul>
+                    <li>there's no increased risk of blood clots from HRT patches or gels</li>
+                    <li>taking HRT tablets can increase your risk of&nbsp;blood clots - but this risk is still small
+                    </li>
+                </ul>
+            </section>
+
+
+
+            <section>
+                <h3>Heart disease and strokes</h3>
+                <p>HRT does not significantly increase the risk of&nbsp;<a
+                        href="/conditions/cardiovascular-disease/">cardiovascular disease</a> (including&nbsp;<a
+                        href="/conditions/coronary-heart-disease/">heart disease</a> and&nbsp;<a
+                        href="/conditions/stroke/">strokes</a>)&nbsp;when started before 60 years of age, and may reduce
+                    your risk.</p>
+                <p>Taking&nbsp;HRT tablets is associated with a small increase in the risk of stroke, but the risk of
+                    stroke for women under age 60 is generally very low, so the overall risk is still small.</p>
+            </section>
+
+
+            <div>
+                <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                    Page last reviewed: 09 September 2019<br>
+                    Next review due: 09 September 2022
+                </p>
+            </div>
+
+            <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+                <ul class="nhsuk-list nhsuk-pagination__list">
+
+                    <li class="nhsuk-pagination-item--previous">
+                        <a class="nhsuk-pagination__link nhsuk-pagination__link--prev"
+                            href="hormone-replacement-therapy-hrt-side-effects">
+                            <span class="nhsuk-pagination__title">Previous</span>
+                            <span class="nhsuk-u-visually-hidden">:</span>
+                            <span class="nhsuk-pagination__page">Side effects</span>
+                            <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                <path
+                                    d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+
+                    <li class="nhsuk-pagination-item--next">
+                        <a class="nhsuk-pagination__link nhsuk-pagination__link--next"
+                            href="hormone-replacement-therapy-hrt-alternatives">
+                            <span class="nhsuk-pagination__title">Next</span>
+                            <span class="nhsuk-u-visually-hidden">:</span>
+                            <span class="nhsuk-pagination__page">Alternatives</span>
+                            <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                <path
+                                    d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
+                                </path>
+                            </svg>
+                        </a>
+                    </li>
+
+                </ul>
+            </nav>
+        </div>
+
+    </div>
+</article>
+
+{% endblock %}
+
+
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+    <div class="nhsuk-footer" id="nhsuk-footer">
+        <div class="nhsuk-width-container">
+            <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+            <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/"
+                        class="nhsuk-footer__list-item-link">NHS sites</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/"
+                        class="nhsuk-footer__list-item-link">NHS App</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/"
+                        class="nhsuk-footer__list-item-link">About us</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/"
+                        class="nhsuk-footer__list-item-link">Contact us</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx"
+                        class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/"
+                        class="nhsuk-footer__list-item-link">Site map</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/"
+                        class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/"
+                        class="nhsuk-footer__list-item-link">Our policies</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/"
+                        class="nhsuk-footer__list-item-link">Cookies</a></li>
+            </ul>
+            <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+        </div>
+    </div>
+</footer>
+{% endblock %}

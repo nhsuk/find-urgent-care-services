@@ -1,0 +1,337 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      },
+      {
+        href: "/",
+        text: "Health A to Z"
+      }
+    ],
+        href: "menopause",
+        text: "Menopause"
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+
+
+  <div class="nhsuk-grid-row">
+    <div class="nhsuk-grid-column-two-thirds">
+
+      <h1>
+        <span role="text">Treatment
+          <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+            <span class="nhsuk-u-visually-hidden"> - </span>
+            Menopause
+          </span>
+        </span>
+      </h1>
+
+      <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+        <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+        <ol class="nhsuk-contents-list__list">
+
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="menopause">Overview</a>
+          </li>
+
+          <li class="nhsuk-contents-list__item">
+            <a class="nhsuk-contents-list__link" href="symptoms">Symptoms</a>
+          </li>
+
+          <li class="nhsuk-contents-list__item" aria-current="page">
+            <span class="nhsuk-contents-list__current">Treatment</span>
+          </li>
+
+        </ol>
+      </nav>
+
+    </div>
+  </div>
+
+  <article>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+        <section>
+          <p data-block-key="yxuxu"></p>
+          <p data-block-key="wf5tn">The main treatment for menopausal symptoms is hormone replacement therapy (HRT),
+            although other treatments are also available for some of the symptoms.</p>
+        </section>
+
+
+        <section>
+          <h2 data-block-key="pbxce">Hormone replacement therapy (HRT)</h2>
+          <p data-block-key="2ycdp">HRT replaces the hormones that are missing. Most symptoms are caused by low
+            oestrogen levels, so this is the most important hormone to replace. If you have a womb you also need a
+            progestogen to protect the lining of the womb.</p>
+          <p data-block-key="8yy6y">HRT is extremely effective at relieving menopausal symptoms.</p>
+          <p data-block-key="0exmh">HRT is available as tablets, skin patches, a gel to rub into the skin&nbsp;or
+            implants.</p>
+          <h3 data-block-key="gfew2">Benefits and risks of hormone replacement therapy (HRT)</h3>
+          <p data-block-key="qdt4j">The main benefit of HRT is that it can help relieve most <a
+              href="https://www.nhs.uk/conditions/menopause/symptoms/">menopausal symptoms</a>, including hot flushes,
+            brain fog, joint pains, mood swings and vaginal dryness.</p>
+          <p data-block-key="xtmm7">It can also help prevent thinning of the bones, which can lead to fractures
+            (osteoporosis). Osteoporosis is more common after the menopause.</p>
+          <p>Some types of HRT can slightly increase the risk of breast cancer and blood clots in
+            some women. You need to discuss whether you have any risk factors with a doctor or nurse.</p>
+          <p>Evidence says that the risks of HRT are small and usually outweighed by the
+            benefits.</p>
+          <p>Your GP can give you more information about the risks and benefits of HRT to help
+            you decide whether or not you want to take it.</p>
+          <p><a href="/conditions/hormone-replacement-therapy-hrt/">Find out more
+              about&nbsp;HRT</a></p>
+        </section>
+
+
+        <section>
+          <h2 data-block-key="iq125">Hot flushes and night sweats</h2>
+          <p data-block-key="9gpkj">If you experience <a href="/conditions/menopause/hot-flushes/">hot flushes</a> and
+            <a href="/conditions/night-sweats/">night sweats</a> as a result of the menopause, simple measures may
+            sometimes help, such as:</p>
+          <ul>
+            <li data-block-key="qgwln">wearing light clothing</li>
+            <li data-block-key="oi8sw">keeping your bedroom cool at night</li>
+            <li data-block-key="p4vgv">taking a cool shower, using a fan or having a cold drink</li>
+            <li data-block-key="lvvk5">trying to&nbsp;<a
+                href="/conditions/stress-anxiety-depression/understanding-stress/">reduce your stress levels</a></li>
+            <li data-block-key="x53at">avoiding potential triggers, such as spicy food, caffeine,&nbsp;smoking and
+              alcohol</li>
+            <li data-block-key="g9fub">taking regular&nbsp;<a
+                href="/live-well/exercise/free-fitness-ideas/">exercise</a> and&nbsp;<a
+                href="https://www.nhs.uk/better-health/lose-weight/">losing weight</a> if you're overweight</li>
+          </ul>
+          <p data-block-key="g215t">If the flushes and sweats are frequent or severe, your GP may suggest taking HRT.
+          </p>
+          <p data-block-key="7d4y4">If HRT isn't suitable for you, or you would prefer not to have it, your GP may
+            recommend other medicines that can help, such as clonidine (a <a
+              href="/conditions/high-blood-pressure-hypertension/">high blood pressure</a>&nbsp;medicine)&nbsp;or
+            certain <a href="/conditions/antidepressants/">antidepressants</a>.</p>
+          <p data-block-key="ktkdx">These medicines can&nbsp;cause unpleasant side effects, so it's important to discuss
+            the risks and benefits with your doctor before starting treatment.</p>
+        </section>
+
+
+        <section>
+          <h2 data-block-key="plgbt">Mood changes</h2>
+          <p data-block-key="i77pu">Some women experience mood swings, low mood and anxiety around the time of the
+            menopause.</p>
+          <p data-block-key="68fgm">Self-help measures such as getting plenty of rest, taking regular exercise and doing
+            relaxing activities such as <a href="/live-well/exercise/guide-to-yoga/">yoga</a>&nbsp;and <a
+              href="/live-well/exercise/guide-to-tai-chi/">tai chi</a>&nbsp;may help. Medicine and other treatments are
+            also available, including HRT and <a href="/conditions/cognitive-behavioural-therapy-cbt/">cognitive
+              behavioural therapy (CBT)</a>.</p>
+          <p data-block-key="7ld08">CBT is a type of talking therapy that can improve low mood and feelings of anxiety.
+            Your GP may be able to refer you for CBT on the NHS, or recommend self-help options such as online CBT
+            courses.</p>
+          <p data-block-key="ls2vb">Antidepressants may&nbsp;help if you've been diagnosed with <a
+              href="/conditions/clinical-depression/">depression</a>.</p>
+        </section>
+
+
+        <section>
+          <h2 data-block-key="fkhmu">Reduced sexual desire</h2>
+          <p data-block-key="gttbm">It's common for women to lose interest in sex around the time of the menopause, but
+            HRT can often help with this. If HRT is not effective, you might be offered a testosterone gel to apply to
+            an area of skin, such as your tummy or the top of your leg.</p>
+          <p data-block-key="6lz3d">Testosterone is the male sex hormone, and it can help restore sex drive in some
+            women. It's not currently licensed for use in women, although it can be prescribed after the menopause by a
+            specialist doctor if they think it might help restore your sex drive.</p>
+          <p data-block-key="pv3gp">Possible side effects of using testosterone include&nbsp;<a
+              href="/conditions/acne/">acne</a> and <a href="/conditions/hirsutism/">unwanted hair growth</a>.</p>
+          <p data-block-key="k3gra">Read more about&nbsp;<a href="/conditions/loss-of-libido/">loss of libido</a> and <a
+              href="/live-well/sexual-health/female-sexual-problems/">female sexual problems</a>.</p>
+        </section>
+
+
+
+        <section>
+          <h2 data-block-key="0rpe4">Vaginal dryness and discomfort</h2>
+          <p data-block-key="sgsgb">If&nbsp;your vagina becomes dry, painful or itchy as a result of the menopause, your
+            GP can prescribe oestrogen treatment that's&nbsp;put directly into your vagina as a pessary, cream or
+            vaginal ring.</p>
+          <p data-block-key="hm99s">This can safely be used alongside HRT.</p>
+          <p data-block-key="0ov8o">You'll usually need to use vaginal oestrogen indefinitely, as your symptoms are
+            likely to return when treatment stops. However, side effects are very rare.</p>
+          <p data-block-key="bq8pe">You can also use over-the-counter vaginal moisturisers or lubricants in addition to,
+            or instead of, vaginal oestrogen.</p>
+          <p data-block-key="1elk5">Read more about&nbsp;<a href="/conditions/vaginal-dryness/">vaginal dryness</a> and
+            <a href="/live-well/sexual-health/sex-as-you-get-older/">sex as you get older</a>.</p>
+        </section>
+
+
+      
+        <section>
+          <h2 data-block-key="upvst">Weak bones</h2>
+          <p data-block-key="xvk5d">Women who have been through the menopause are at an increased risk of developing
+            weak bones that may break more easily (<a href="/conditions/osteoporosis/">osteoporosis</a>) as a result of
+            the lower level of oestrogen in the body.</p>
+          <p data-block-key="anohl">You can reduce your chances of developing osteoporosis by:</p>
+          <ul>
+            <li data-block-key="wyf8u"><b>taking HRT</b> – HRT can&nbsp;help to prevent your bones getting weaker,
+              although&nbsp;this effect does not tend to last&nbsp;after&nbsp;treatment stops</li>
+            <li data-block-key="ulbot"><b>exercising&nbsp;regularly</b> – including&nbsp;weight-bearing and resistance
+              exercises</li>
+            <li data-block-key="0sthy"><b>eating a healthy diet</b> that includes plenty of fruit, vegetables and
+              sources of&nbsp;<a href="/conditions/vitamins-and-minerals/calcium/">calcium</a>, such as&nbsp;low-fat
+              milk and yoghurt</li>
+            <li data-block-key="mv4xt"><b>getting some sunlight</b> –&nbsp;sunlight on your skin triggers the production
+              of <a href="/conditions/vitamins-and-minerals/vitamin-d/">vitamin D</a>, which can help to keep your bones
+              strong</li>
+            <li data-block-key="5zs53"><b>stopping smoking and cutting down on alcohol</b></li>
+            <li data-block-key="a43no"><b>taking calcium and/or vitamin D supplements</b> if you do not feel you're
+              getting enough&nbsp;of these – discuss this with your GP</li>
+          </ul>
+          <p>Read more about&nbsp;<a
+              href="/live-well/healthy-body/menopause-and-your-bone-health/">menopause and bone health</a> and <a
+              href="/conditions/osteoporosis/prevention/">preventing osteoporosis</a>.</p>
+        </section>
+
+
+        <section>
+          <h2 data-block-key="ljyv7">Follow-up appointments</h2>
+          <p data-block-key="ik7y3">If you're having treatment for your menopausal symptoms, you'll need to return to
+            your GP for a follow-up review after 3 months, and once a year after that.</p>
+          <p data-block-key="offr3">During your reviews, your GP may:</p>
+
+          <ul>
+            <li data-block-key="8l194">make sure your symptoms are under control</li>
+            <li data-block-key="veq31">ask about any side effects and bleeding patterns</li>
+            <li data-block-key="t34uk">check your weight and blood pressure</li>
+            <li data-block-key="x3xl8">review the type of HRT you're taking and make any necessary changes</li>
+            <li data-block-key="l3bli">discuss&nbsp;whether you should continue it or if you decide to stop, how this
+              should be done</li>
+
+          </ul>
+          <p data-block-key="tnlns">Many women will need treatment for a few years, until&nbsp;most of
+            their&nbsp;menopausal symptoms have passed.</p>
+          <p data-block-key="29fqb">Some women may wish to take HRT for many years. Their individual benefits and risk
+            should be assessed every year.</p>
+        </section>
+
+
+      
+        <section>
+          <h2>Complementary and alternative therapies</h2>
+          <p>Complementary and alternative treatments, such as herbal remedies and bioidentical
+            ("natural")&nbsp;hormones, are not recommended for symptoms of the menopause. This is because it's generally unclear how safe and effective they are.</p>
+          <p>Bioidentical hormones are not the same as body identical hormones. Body identical hormones, or micronised progesterone, can be prescribed to treat menopausal symptoms.</p>
+          <p>Some complementary and alternative therapies&nbsp;can also&nbsp;interact with other medicines and cause side effects.</p>
+          <p>Ask your GP or pharmacist for advice if you're thinking about using a complementary therapy.</p>
+        </section>
+
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 29 August 2018<br>
+            Next review due: 29 August 2021
+          </p>
+        </div>
+
+        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+          <ul class="nhsuk-list nhsuk-pagination__list">
+            <li class="nhsuk-pagination-item--previous">
+              <a class="nhsuk-pagination__link nhsuk-pagination__link--prev" href="symptoms">
+                <span class="nhsuk-pagination__title">Previous</span>
+                <span class="nhsuk-u-visually-hidden">:</span>
+                <span class="nhsuk-pagination__page">Symptoms</span>
+                <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  aria-hidden="true" width="34" height="34">
+                  <path
+                    d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+  </article>
+
+{% endblock %}
+
+
+
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/" class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/" class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/" class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx" class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/" class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/" class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/" class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}

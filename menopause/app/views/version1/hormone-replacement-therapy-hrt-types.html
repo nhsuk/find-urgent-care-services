@@ -1,0 +1,320 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      },
+      {
+        href: "/",
+        text: "Health A to Z"
+      }
+    ],
+        href: "hormone-replacement-therapy-hrt",
+        text: "Hormone replacement therapy (HRT) "
+  }) }}
+{% endblock %}
+
+
+
+
+{% block content %}
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+            <h1>
+                <span role="text">Types
+                    <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                        Hormone replacement therapy (HRT)
+                    </span>
+                </span>
+            </h1>
+
+            <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+                <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+                <ol class="nhsuk-contents-list__list">
+
+                    <li class="nhsuk-contents-list__item" aria-current="page">
+                        <a class="nhsuk-contents-list__link"
+                        href="hormone-replacement-therapy-hrt">Overview</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <span class="nhsuk-contents-list__current">Types</span>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-side-effects">Side effects</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-risks">Benefits and risks</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-alternatives">Alternatives</a>
+                    </li>
+
+                </ol>
+            </nav>
+
+        </div>
+    </div>
+
+
+    <article>
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+
+                <section>
+                    <p><b>Different types of hormone replacement therapy (HRT) are&nbsp;available.</b></p>
+                    <p>If you're considering HRT, talk to your GP about the options suitable for&nbsp;you, as well as
+                        possible <a href="/conditions/hormone-replacement-therapy-hrt/alternatives/">alternatives to
+                            HRT</a>.</p>
+                </section>
+
+
+                <section>
+                    <h2>HRT&nbsp;hormones</h2>
+                    <p>HRT&nbsp;replaces the&nbsp;hormones that a woman's body no longer produces because of <a
+                            href="/conditions/menopause/">the&nbsp;menopause</a>.</p>
+                    <p>The 2 main&nbsp;hormones used in HRT are:</p>
+                    <ul>
+                        <li>oestrogen –&nbsp;types used include&nbsp;estradiol, estrone and estriol</li>
+                        <li>progestogen&nbsp;–&nbsp;either a synthetic version of the hormone&nbsp;progesterone (such
+                            as&nbsp;dydrogesterone, medroxyprogesterone, norethisterone and levonorgestrel), or a
+                            version called micronised progesterone (sometimes called body identical, or natural) that is
+                            chemically identical to the human hormone</li>
+                    </ul>
+                    <p>HRT involves either taking both of these hormones (combined HRT) or just taking oestrogen
+                        (oestrogen-only HRT).</p>
+                    <p>Oestrogen-only HRT is usually only&nbsp;recommended if you have had your womb removed during
+                        a&nbsp;<a href="/conditions/hysterectomy/">hysterectomy</a>.</p>
+                </section>
+
+
+                <section>
+                    <h2>Ways of taking HRT</h2>
+                    <p>HRT comes in several different forms. Talk to a GP about the pros and cons of each option.</p>
+                    <h3>Tablets&nbsp;</h3>
+                    <p>Tablets are 1 of the most common forms of HRT. They are usually taken once a day.</p>
+                    <p>Both oestrogen-only and combined HRT are available as tablets. For some women this may be the
+                        simplest way of&nbsp;having&nbsp;treatment.</p>
+                    <p>However,&nbsp;it's important to be aware that some of the&nbsp;<a
+                            href="/conditions/hormone-replacement-therapy-hrt/risks/">risks of HRT</a>, such as <a
+                            href="/conditions/blood-clots/">blood clots</a>, are higher with tablets than with other
+                        forms of HRT (although the overall risk is still small).</p>
+                    <h3>Skin patches</h3>
+                    <p>Skin patches are also a common way of taking HRT. You stick them to your skin and replace them
+                        every few days.</p>
+                    <p>Oestrogen-only and combined HRT&nbsp;patches are available.</p>
+                    <p>Skin patches&nbsp;may be a better option than tablets if you find it inconvenient&nbsp;to take a
+                        tablet every day.</p>
+                    <p>Using patches can also help avoid some <a
+                            href="/conditions/hormone-replacement-therapy-hrt/side-effects/">side effects of HRT</a>,
+                        such as <a href="/conditions/indigestion/">indigestion</a>, and unlike tablets, they do
+                        not&nbsp;increase your&nbsp;risk of blood clots.</p>
+                    <h3>Oestrogen gel</h3>
+                    <p>Oestrogen gel is an increasingly&nbsp;popular form of HRT. It's rubbed onto your skin once a day.
+                    </p>
+                    <p>Like skin patches, gel can be a convenient way of taking HRT and does not increase your risk of
+                        blood clots.</p>
+                    <p>But&nbsp;if you still have your womb, you'll need to take some form of progestogen separately
+                        too, to reduce your risk of womb cancer.</p>
+                    <h3>Implants</h3>
+                    <p>HRT also comes as small pellet-like implants that are inserted under&nbsp;your skin (usually in
+                        the&nbsp;tummy area) after your skin has been numbed with <a
+                            href="/conditions/local-anaesthesia/">local anaesthetic</a>.</p>
+                    <p>The implant&nbsp;releases oestrogen gradually and lasts for several months before needing to be
+                        replaced.</p>
+                    <p>This may be a convenient option if you do not want to worry about taking your treatment every day
+                        or every few days. But if you still have your womb, you'll need to take progestogen separately
+                        too.</p>
+                    <p>If you're taking a different form of oestrogen and need to take progestogen alongside
+                        it,&nbsp;another implant option is the&nbsp;<a
+                            href="/conditions/contraception/ius-intrauterine-system/">intrauterine system (IUS)</a>. An
+                        IUS releases&nbsp;a progestogen hormone into the womb.&nbsp;It can stay in place for 3 to 5
+                        years and also acts as a contraceptive.</p>
+                    <p>Implants of HRT are not widely available and are not used very often.</p>
+                    <h3>Vaginal oestrogen</h3>
+                    <p>Oestrogen is also available as a cream, pessary or ring that is placed inside your vagina.</p>
+                    <p>This can help relieve <a href="/conditions/vaginal-dryness/">vaginal dryness</a>, but will not
+                        help with other symptoms such as hot flushes.</p>
+                    <p>It does not carry the usual <a href="/conditions/hormone-replacement-therapy-hrt/risks/">risks of
+                            HRT</a> and does not increase your risk of breast cancer, so you can use it without taking
+                        progestogen, even if you still have a womb.</p>
+                    <h3>Testosterone</h3>
+                    <p>Testosterone is available as a gel that you rub onto your skin. It is not currently licensed for
+                        use in women, but it can be prescribed after the menopause by a specialist doctor if they think
+                        it might help restore your sex drive.</p>
+                    <p>Testosterone is usually only recommended for women whose <a
+                            href="/conditions/loss-of-libido/">low sex drive</a> (libido) does not improve after using
+                        HRT. It is used alongside another type of HRT.</p>
+                    <p>Possible side effects of using testosterone include acne and unwanted hair growth.</p>
+                    <p>Ask a GP for more information on testosterone products.</p>
+                </section>
+
+
+
+                <section>
+                    <h2>HRT&nbsp;treatment routines</h2>
+                    <p>Your treatment routine for HRT depends on whether you're in the early stages of the menopause or
+                        have had menopausal symptoms for some time.</p>
+                    <p>The 2 types of routines are&nbsp;cyclical (or sequential) HRT and continuous combined HRT.</p>
+                    <h3>Cyclical&nbsp;HRT</h3>
+                    <p>Cyclical HRT, also known as sequential HRT, is often recommended for women taking combined HRT
+                        who&nbsp;have menopausal symptoms but still have their&nbsp;<a
+                            href="/conditions/periods/">periods</a>.</p>
+                    <p>There are 2 types of cyclical HRT:</p>
+                    <ul>
+                        <li>monthly HRT&nbsp;–&nbsp;you take oestrogen every day, and take progestogen alongside it for
+                            the last 14 days&nbsp;of your menstrual cycle</li>
+                        <li>3-monthly HRT&nbsp;–&nbsp;you take oestrogen every day, and take progestogen alongside it
+                            for around 14 days every 3 months</li>
+                    </ul>
+                    <p>Monthly HRT is usually recommended for women having regular periods.</p>
+                    <p>3-monthly HRT is usually recommended for women having <a
+                            href="/conditions/irregular-periods/">irregular periods</a>. You should&nbsp;have&nbsp;a
+                        period every 3 months.</p>
+                    <p>It's useful to maintain regular periods so you know when your periods naturally stop and when
+                        you're likely to progress to the last stage of the menopause.</p>
+                    <h3>Continuous combined HRT</h3>
+                    <p>Continuous combined HRT is usually recommended for women who are postmenopausal. A woman is
+                        usually said&nbsp;to&nbsp;be postmenopausal if she has not had a period for 1 year.</p>
+                    <p>Continuous combined HRT involves taking oestrogen and progestogen every day without a break.</p>
+                    <p>Oestrogen-only HRT is also usually taken every day without a break.</p>
+                </section>
+
+
+                <div>
+                    <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                        Page last reviewed: 09 September 2019<br>
+                        Next review due: 09 September 2022
+                    </p>
+                </div>
+
+
+                <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+                    <ul class="nhsuk-list nhsuk-pagination__list">
+
+                        <li class="nhsuk-pagination-item--previous">
+                            <a class="nhsuk-pagination__link nhsuk-pagination__link--prev"
+                                href="hormone-replacement-therapy-hrt">
+                                <span class="nhsuk-pagination__title">Previous</span>
+                                <span class="nhsuk-u-visually-hidden">:</span>
+                                <span class="nhsuk-pagination__page">Hormone replacement therapy (HRT)</span>
+                                <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                    <path
+                                        d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+
+                        <li class="nhsuk-pagination-item--next">
+                            <a class="nhsuk-pagination__link nhsuk-pagination__link--next"
+                                href="hormone-replacement-therapy-hrt-side-effects">
+                                <span class="nhsuk-pagination__title">Next</span>
+                                <span class="nhsuk-u-visually-hidden">:</span>
+                                <span class="nhsuk-pagination__page">Side effects</span>
+                                <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg"
+                                    viewBox="0 0 24 24" aria-hidden="true" width="34" height="34">
+                                    <path
+                                        d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
+                                    </path>
+                                </svg>
+                            </a>
+                        </li>
+
+                    </ul>
+                </nav>
+
+            </div>
+
+        </div>
+    </article>
+
+
+{% endblock %}
+
+
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/" class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/" class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/" class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx" class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/" class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/" class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/" class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}

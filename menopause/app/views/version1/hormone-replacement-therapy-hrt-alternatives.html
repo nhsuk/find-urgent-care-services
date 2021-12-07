@@ -1,0 +1,314 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      },
+      {
+        href: "/",
+        text: "Health A to Z"
+      }
+    ],
+        href: "hormone-replacement-therapy-hrt",
+        text: "Hormone replacement therapy (HRT) "
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+            <h1>
+                <span role="text">Alternatives
+                    <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                        Hormone replacement therapy (HRT)
+                    </span>
+                </span>
+            </h1>
+
+            <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+                <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+                <ol class="nhsuk-contents-list__list">
+
+                    <li class="nhsuk-contents-list__item">
+                      <a class="nhsuk-contents-list__link"
+                      href="hormone-replacement-therapy-hrt">Overview</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-types">Types</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-side-effects">Side effects</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-risks">Benefits and risks</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                      <span class="nhsuk-contents-list__current">Alternatives</span>
+                    </li>
+
+                </ol>
+            </nav>
+
+        </div>
+    </div>
+
+
+  <article>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <p><b>If you're unable to&nbsp;take hormone replacement therapy (HRT) or decide not to, you may want to
+              consider alternative&nbsp;ways of controlling your menopausal symptoms.</b></p>
+        </section>
+
+
+        <section>
+          <h2>Lifestyle&nbsp;measures</h2>
+          <p>The following&nbsp;lifestyle measures can help reduce some&nbsp;<a
+              href="/conditions/menopause/symptoms/">menopausal symptoms</a>:</p>
+          <ul>
+            <li><a href="/live-well/exercise/">Do regular exercise</a>&nbsp;–&nbsp;regular physical activity&nbsp;can
+              reduce&nbsp;<a href="/conditions/menopause/hot-flushes/">hot flushes</a> and improve sleep. It's also a
+              good way of boosting your mood if you feel anxious, irritable or depressed. Weight-bearing exercises can
+              help keep your bones strong</li>
+            <li>have a healthy diet –&nbsp;a&nbsp;<a href="/live-well/eat-well/">balanced diet</a> can&nbsp;help ensure
+              you do not put on weight and can keep your bones healthy</li>
+            <li>stay cool at night&nbsp;–&nbsp;wear loose clothes and sleep in a cool, well-ventilated room if you
+              experience hot flushes and <a href="/conditions/night-sweats/">night sweats</a></li>
+            <li>cut down on caffeine, <a href="/live-well/alcohol-support/tips-on-cutting-down-alcohol/">alcohol</a> and
+              spicy food,&nbsp;as they have all been known to trigger hot flushes</li>
+            <li><a href="/conditions/stress-anxiety-depression/understanding-stress/">try to reduce your stress
+                levels</a>&nbsp;to improve mood swings, make sure you get plenty of rest, as well as getting regular
+              exercise. Activities such as&nbsp;<a href="/live-well/exercise/guide-to-yoga/">yoga</a> and&nbsp;<a
+                href="/live-well/exercise/guide-to-tai-chi/">tai chi</a>&nbsp;may help you relax</li>
+            <li><a href="/live-well/quit-smoking/10-self-help-tips-to-stop-smoking/">give up smoking</a>&nbsp;if you
+              smoke – giving up will help reduce hot flushes and your risk of developing serious health conditions, such
+              as <a href="/conditions/coronary-heart-disease/">heart disease</a>,&nbsp;<a
+                href="/conditions/stroke/">stroke</a> and&nbsp;<a href="/conditions/cancer/">cancer</a></li>
+            <li>try&nbsp;vaginal lubricant or moisturiser if you experience&nbsp;<a
+                href="/conditions/vaginal-dryness/">vaginal dryness</a>&nbsp;– several different types are available to
+              buy from shops and pharmacies</li>
+          </ul>
+        </section>
+
+
+        <section>
+          <h2>Tibolone</h2>
+          <p>Tibolone (brand name Livial)&nbsp;is a prescription medicine that is similar to taking combined HRT
+            (oestrogen and progestogen). It's taken as a tablet once a day.</p>
+          <p>It can help relieve symptoms such as hot flushes, low mood and&nbsp;<a
+              href="/conditions/loss-of-libido/">reduced sex drive</a>, although some studies have suggested it may not
+            be as effective as combined HRT.</p>
+          <p>It's only suitable for women who had their last&nbsp;<a href="/conditions/periods/">period</a>&nbsp;more
+            than&nbsp;a year ago (known as the post-menopause).</p>
+          <p>Side effects of tibolone can include <a href="/conditions/stomach-ache/">tummy (abdominal) pain</a>, <a
+              href="/conditions/pelvic-pain/">pelvic pain</a>, breast tenderness,&nbsp;<a
+              href="/conditions/itchy-skin/">itching</a> and <a href="/conditions/vaginal-discharge/">vaginal
+              discharge</a>.</p>
+          <p>Risks of tibolone are similar to the <a href="/conditions/hormone-replacement-therapy-hrt/risks/">risks of
+              HRT</a>, and include an increased risk of&nbsp;<a href="/conditions/breast-cancer/">breast cancer</a> and
+            <a href="/conditions/stroke/">strokes</a>. Talk to your GP about the risks and benefits of tibolone if
+            you're considering taking it.</p>
+        </section>
+
+
+        <section>
+          <h2>Antidepressants</h2>
+          <p>There are 2 types of&nbsp;<a href="/conditions/antidepressants/">antidepressants</a>&nbsp;– <a
+              href="/conditions/ssri-antidepressants/">selective serotonin reuptake inhibitors (SSRIs)</a>
+            and&nbsp;serotonin-noradrenaline reuptake inhibitors (SNRIs) – which may help with hot flushes caused by the
+            menopause.</p>
+          <p>These medicines are not licensed for this use. This means they have not undergone&nbsp;<a
+              href="/conditions/clinical-trials/">clinical trials</a> to test if they help this symptom, but many
+            experts believe they're likely to help and your doctor will discuss the possible benefits and risks with
+            you.</p>
+          <p>Side effects of&nbsp;SSRIs and SNRIs&nbsp;can include&nbsp;feeling agitated, shaky or anxious, <a
+              href="/conditions/feeling-sick-nausea/">feeling sick</a>,&nbsp;<a
+              href="/conditions/dizziness/">dizziness</a> and a reduced sex drive.</p>
+          <p>Any side effects will usually improve over time, but you should see a GP if they do not.</p>
+        </section>
+
+
+        <section>
+          <h2>Clonidine</h2>
+          <p>Clonidine&nbsp;is a prescription medicine that can help reduce hot flushes and night sweats&nbsp;in some
+            menopausal women. It's taken as tablets 2 or 3 times a day.</p>
+          <p>It does not affect hormone levels, so unlike HRT it does not carry an increased risk of problems such as
+            breast cancer. But research suggests it only has a very small effect on menopausal symptoms.</p>
+          <p>Clonidine can also cause some unpleasant side effects,&nbsp;including <a href="/conditions/dry-mouth/">dry
+              mouth</a>, drowsiness,&nbsp;<a href="/conditions/clinical-depression/">depression</a> and <a
+              href="/conditions/constipation/">constipation</a>.</p>
+          <p>It may take 2 to 4 weeks to notice the effects of clonidine. Speak to a GP if your symptoms do not improve
+            or&nbsp;you experience troublesome side effects.</p>
+        </section>
+
+
+        <section>
+          <h2>Bioidentical&nbsp;or "natural" hormones</h2>
+          <p>Bioidentical hormones are hormone preparations made from plant sources that are promoted as being similar
+            or identical to human hormones.</p>
+          <p>Practitioners claim these hormones are&nbsp;a&nbsp;"natural" and safer alternative to standard HRT
+            medicines.</p>
+          <p>However, bioidentical preparations are not recommended because:</p>
+          <ul>
+            <li>they&nbsp;are not regulated and it's not clear how safe they are&nbsp;– there's no good evidence to
+              suggest they're safer than standard HRT</li>
+            <li>it's not known how effective they are in reducing menopausal symptoms</li>
+            <li>the balance of hormones&nbsp;used in bioidentical preparations is usually based on the hormone levels in
+              your saliva, but there's no evidence that these levels&nbsp;are related to your symptoms</li>
+          </ul>
+          <p>Bioidentical hormones are not the same as body identical hormones. A body identical hormone, or micronised
+            progesterone, can be prescribed to treat menopausal symptoms.</p>
+          <p>Many standard HRT hormones are made from natural sources, but unlike bioidentical hormones, they're closely
+            regulated and have been well researched to ensure they're as effective and safe as possible.</p>
+        </section>
+
+        <section>
+          <h2>Complementary&nbsp;therapies</h2>
+          <p>Several products are sold in health shops for treating menopausal symptoms, including herbal remedies such
+            as evening primrose oil, black cohosh, angelica, ginseng and St John's wort.</p>
+          <p>There's evidence to suggest that some of these remedies, including black cohosh and St John's wort, may
+            help reduce hot flushes, but many complementary therapies are not supported by scientific evidence.</p>
+          <p>Even when there is some supporting evidence, there's uncertainty about the right doses to use and whether
+            the health benefits last. Some of these remedies (especially St John's wort) may also cause serious side
+            effects if they're taken with other medicines.</p>
+          <p>These products are often marketed as "natural", but this does not necessarily mean they're safe. The
+            quality, purity and ingredients cannot always be guaranteed, and they may cause unpleasant side effects.</p>
+          <p>It's a good idea to ask a GP or pharmacist for advice if you're thinking about using a complementary
+            therapy.</p>
+        </section>
+
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 09 September 2019<br>
+            Next review due: 09 September 2022
+          </p>
+        </div>
+
+
+        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+          <ul class="nhsuk-list nhsuk-pagination__list">
+
+            <li class="nhsuk-pagination-item--previous">
+              <a class="nhsuk-pagination__link nhsuk-pagination__link--prev"
+                href="hormone-replacement-therapy-hrt-risks">
+                <span class="nhsuk-pagination__title">Previous</span>
+                <span class="nhsuk-u-visually-hidden">:</span>
+                <span class="nhsuk-pagination__page">Benefits and risks</span>
+                <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  aria-hidden="true" width="34" height="34">
+                  <path
+                    d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+  </article>
+
+{% endblock %}
+
+
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/"
+            class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/"
+            class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/"
+            class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/"
+            class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx"
+            class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/"
+            class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/"
+            class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/"
+            class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/"
+            class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}

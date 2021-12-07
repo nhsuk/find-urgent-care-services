@@ -1,0 +1,298 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      },
+      {
+        href: "/",
+        text: "Health A to Z"
+      }
+    ],
+        href: "hormone-replacement-therapy-hrt",
+        text: "Hormone replacement therapy (HRT) "
+  }) }}
+{% endblock %}
+
+
+{% block content %}
+    <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+            <h1>
+                <span role="text">Side effects 
+                    <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+                        <span class="nhsuk-u-visually-hidden"> - </span>
+                        Hormone replacement therapy (HRT)
+                    </span>
+                </span>
+            </h1>
+
+            <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+                <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+                <ol class="nhsuk-contents-list__list">
+                  
+                    <li class="nhsuk-contents-list__item">
+                      <a class="nhsuk-contents-list__link"
+                      href="hormone-replacement-therapy-hrt">Overview</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-types">Types</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                      <span class="nhsuk-contents-list__current">Side effects</span>
+
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-risks">Benefits and risks</a>
+                    </li>
+
+                    <li class="nhsuk-contents-list__item">
+                        <a class="nhsuk-contents-list__link"
+                            href="hormone-replacement-therapy-hrt-alternatives">Alternatives</a>
+                    </li>
+
+                </ol>
+            </nav>
+
+        </div>
+    </div>
+
+
+  <article>
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <section>
+          <p><strong>Like any medicine, the hormones used in hormone replacement therapy (HRT) can cause side effects.</strong></p>
+          <p>Any side effects usually improve over time, so it's a good idea to persevere with treatment for at least 3 months if possible.</p>
+          <p>Speak to a GP if&nbsp;you have severe side effects or they continue for longer than 3 months.</p>
+        </section>
+
+
+        <section>
+          <h2>Side&nbsp;effects of oestrogen</h2>
+          <p>The main side effects&nbsp;of&nbsp;taking oestrogen include:</p>
+          <ul>
+            <li>bloating </li>
+            <li>breast tenderness or swelling </li>
+            <li>swelling in other parts of the body </li>
+            <li>feeling sick</li>
+            <li>leg cramps </li>
+            <li><a href="/conditions/headaches/">headaches</a></li>
+            <li><a href="/conditions/indigestion/">indigestion</a></li>
+            <li>vaginal bleeding </li>
+          </ul>
+          <p>These side effects will often pass after a few weeks. To ease side effects, try:</p>
+          <ul>
+            <li>taking your oestrogen dose with food, which may help feelings of sickness and indigestion </li>
+            <li>eating a low-fat, high-carbohydrate diet, which may reduce breast tenderness </li>
+            <li>doing <a href="/live-well/exercise/">regular exercise</a>&nbsp;and&nbsp;<a
+                href="/live-well/exercise/how-to-stretch-after-exercising/">stretching</a>, to help leg cramps </li>
+          </ul>
+          <p>If side effects persist, your GP may recommend switching to a different way of taking&nbsp;oestrogen (for
+            example, changing from a tablet to a patch), changing the medicine you're taking, or lowering your dose.</p>
+        </section>
+
+
+        <section>
+          <h2>Side&nbsp;effects of progestogen</h2>
+          <p>The main side effects&nbsp;of&nbsp;taking&nbsp;progestogen include:</p>
+          <ul>
+            <li>breast tenderness </li>
+            <li>swelling in other parts of the body </li>
+            <li>headaches or&nbsp;<a href="/conditions/migraine/">migraines</a></li>
+            <li>mood swings </li>
+            <li><a href="/conditions/clinical-depression/">depression</a></li>
+            <li><a href="/conditions/acne/">acne</a></li>
+            <li><a href="/conditions/stomach-ache/">tummy (abdominal) pain</a></li>
+            <li><a href="/conditions/back-pain/">back pain</a></li>
+            <li>vaginal bleeding </li>
+          </ul>
+          <p>As with side effects of oestrogen, these will usually pass after a few weeks.</p>
+          <p>If&nbsp;they persist, a GP may recommend switching to a different way of taking&nbsp;progestogen, changing
+            the medicine you're taking, or lowering your dose.</p>
+        </section>
+
+
+
+        <section>
+          <h2>Weight&nbsp;gain and HRT</h2>
+          <p>Many women believe that taking HRT will make them put on weight, but there's no evidence to support this
+            claim. </p>
+          <p>You may gain some weight during <a href="/conditions/menopause/">the menopause</a>, but this often happens
+            regardless of whether you take HRT.</p>
+          <p><a href="/live-well/exercise/">Exercising regularly</a> and eating a <a href="/live-well/eat-well/">healthy
+              diet</a> should help&nbsp;you to <a>lose any unwanted weight</a>.</p>
+        </section>
+
+
+        <section>
+
+          <h2>More&nbsp;serious risks</h2>
+          <p>HRT has also been associated with an increased risk of&nbsp;<a href="/conditions/blood-clots/">blood
+              clots</a> and certain types of <a href="/conditions/cancer/">cancer</a>.</p>
+          <p>Find out more about the&nbsp;<a href="/conditions/hormone-replacement-therapy-hrt/risks/">risks of HRT</a>
+          </p>
+
+
+        </section>
+
+
+        <section>
+          <h2>Reporting side effects</h2>
+          <p>The&nbsp;<a href="https://yellowcard.mhra.gov.uk/" title="External website">Yellow Card Scheme</a> allows
+            you to report suspected side effects from any type of medicine you are taking.</p>
+          <p>It's run by a medicines safety watchdog called the&nbsp;<a
+              href="https://www.gov.uk/government/organisations/medicines-and-healthcare-products-regulatory-agency"
+              title="External website">Medicines and Healthcare products Regulatory Agency (MHRA)</a>.</p>
+        </section>
+
+
+        <div>
+          <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+            Page last reviewed: 09 September 2019<br>
+            Next review due: 09 September 2022
+          </p>
+        </div>
+
+
+        <nav class="nhsuk-pagination" role="navigation" aria-label="Pagination">
+          <ul class="nhsuk-list nhsuk-pagination__list">
+
+            <li class="nhsuk-pagination-item--previous">
+              <a class="nhsuk-pagination__link nhsuk-pagination__link--prev"
+                href="hormone-replacement-therapy-hrt-types">
+                <span class="nhsuk-pagination__title">Previous</span>
+                <span class="nhsuk-u-visually-hidden">:</span>
+                <span class="nhsuk-pagination__page">Types</span>
+                <svg class="nhsuk-icon nhsuk-icon__arrow-left" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  aria-hidden="true" width="34" height="34">
+                  <path
+                    d="M4.1 12.3l2.7 3c.2.2.5.2.7 0 .1-.1.1-.2.1-.3v-2h11c.6 0 1-.4 1-1s-.4-1-1-1h-11V9c0-.2-.1-.4-.3-.5h-.2c-.1 0-.3.1-.4.2l-2.7 3c0 .2 0 .4.1.6z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+
+            <li class="nhsuk-pagination-item--next">
+              <a class="nhsuk-pagination__link nhsuk-pagination__link--next"
+                href="hormone-replacement-therapy-hrt-risks">
+                <span class="nhsuk-pagination__title">Next</span>
+                <span class="nhsuk-u-visually-hidden">:</span>
+                <span class="nhsuk-pagination__page">Benefits and risks</span>
+                <svg class="nhsuk-icon nhsuk-icon__arrow-right" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"
+                  aria-hidden="true" width="34" height="34">
+                  <path
+                    d="M19.6 11.66l-2.73-3A.51.51 0 0 0 16 9v2H5a1 1 0 0 0 0 2h11v2a.5.5 0 0 0 .32.46.39.39 0 0 0 .18 0 .52.52 0 0 0 .37-.16l2.73-3a.5.5 0 0 0 0-.64z">
+                  </path>
+                </svg>
+              </a>
+            </li>
+
+          </ul>
+        </nav>
+
+      </div>
+
+    </div>
+  </article>
+
+
+
+
+
+
+
+{% endblock %}
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/"
+            class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/"
+            class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/"
+            class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/"
+            class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx"
+            class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/"
+            class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/"
+            class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/"
+            class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/"
+            class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}

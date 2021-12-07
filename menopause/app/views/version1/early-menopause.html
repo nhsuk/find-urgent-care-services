@@ -1,0 +1,255 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      }
+      ],
+        href: "/",
+        text: "Health A to Z"
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+
+
+        <div class="nhsuk-grid-row">
+            <div class="nhsuk-grid-column-two-thirds">
+                <h1>Early menopause</h1>
+            </div>
+        </div>
+
+        <article>
+            <div class="nhsuk-grid-row">
+                <div class="nhsuk-grid-column-two-thirds">
+
+                    <section>
+                        <p><b>Early menopause happens when a woman's periods stop before the age of 45. It can happen naturally, or as a side effect of some treatments.</b></p>
+                        <p>For most women, the menopause starts between the ages of 45 and 55.</p>
+                        <p>If you're under 45 and have noticed your periods becoming infrequent or stopping altogether, you should speak to a GP.</p>
+                    </section>
+
+
+
+                    <section>
+                        <h2>Causes of early menopause</h2>
+                        <h3>The ovaries stop working</h3>
+                        <p>Early menopause can happen naturally if a woman's ovaries stop making normal levels of
+                            certain hormones, particularly the hormone oestrogen.</p>
+                        <p>This is sometimes called premature ovarian failure, or primary ovarian insufficiency.</p>
+                        <p>The cause of premature ovarian failure is often unknown, but in some women it may be caused
+                            by:</p>
+                        <ul>
+                            <li>chromosome abnormalities – such as in women with <a
+                                    href="/conditions/turner-syndrome/">Turner syndrome</a></li>
+                            <li>an autoimmune disease – where the immune system starts attacking body tissues</li>
+                            <li>certain infections, such as <a href="/conditions/tuberculosis-tb/">tuberculosis</a>, <a
+                                    href="/conditions/malaria/">malaria</a> and <a href="/conditions/mumps/">mumps</a> –
+                                but this is very rare</li>
+                        </ul>
+                        <p>Premature ovarian failure can sometimes run in families. This might be the case if any of
+                            your relatives went through the menopause at a very young age (20s or early 30s).</p>
+                        <h3>Cancer treatments</h3>
+                        <p><a href="/conditions/radiotherapy/">Radiotherapy</a> and <a
+                                href="/conditions/chemotherapy/">chemotherapy</a> can cause premature ovarian failure.
+                            This may be permanent or temporary.</p>
+                        <p>Your risk of having an early menopause will depend on:</p>
+                        <ul>
+                            <li>your age – girls who have not yet reached puberty can tolerate stronger treatment than
+                                older women</li>
+                            <li>the type of treatment you're given – different types of chemotherapy may affect the
+                                ovaries differently</li>
+                            <li>where on your body any radiotherapy is focused – your risk of developing premature
+                                menopause is higher if you have radiotherapy treatment around your brain or pelvis</li>
+                        </ul>
+                        <h3>Surgery to remove the ovaries</h3>
+                        <p>Surgically removing both ovaries will also bring on premature or early menopause.</p>
+                        <p>For example, the ovaries may need to be removed during a <a
+                                href="/conditions/hysterectomy/">hysterectomy</a> (an operation to remove the womb).</p>
+                    </section>
+
+
+                    <section>
+                        <h2>Symptoms of early menopause</h2>
+                        <p>The main symptom of early menopause is periods becoming infrequent or stopping altogether
+                            without any other reason (such as pregnancy).</p>
+                        <p>Some women may also get other typical menopausal symptoms, including:</p>
+                        <ul>
+                            <li><a href="/conditions/menopause/hot-flushes/">hot flushes</a></li>
+                            <li><a href="/conditions/night-sweats/">night sweats</a></li>
+                            <li><a href="/conditions/vaginal-dryness/">vaginal dryness</a> and discomfort during sex
+                            </li>
+                            <li><a href="/conditions/insomnia/">difficulty sleeping</a></li>
+                            <li><a href="/conditions/stress-anxiety-depression/low-mood-and-depression/">low mood</a> or
+                                <a href="/conditions/stress-anxiety-depression/understanding-panic/">anxiety</a></li>
+                            <li><a href="/conditions/loss-of-libido/">reduced sex drive (libido)</a></li>
+                            <li>problems with memory and concentration</li>
+                        </ul>
+                        <p>Read more about the <a href="/conditions/menopause/symptoms/">symptoms of the menopause</a>.
+                        </p>
+                        <p>Women who go through early menopause also have an increased risk of <a
+                                href="/conditions/osteoporosis/">osteoporosis</a> and <a
+                                href="/conditions/cardiovascular-disease/">cardiovascular disease</a> because of their
+                            lowered oestrogen hormone levels.</p>
+                    </section>
+
+
+                    <section>
+                        <h2>Diagnosing early menopause</h2>
+                        <p>A GP should be able to make a diagnosis of early menopause based on your symptoms, your
+                            family history, and blood tests to check your hormone levels.</p>
+                        <p>You may be referred to a specialist.</p>
+                    </section>
+
+
+
+                    <section>
+                        <h2>Treatments for early menopause</h2>
+                        <p>The main treatment for early menopause is either the <a
+                                href="/conditions/contraception/combined-contraceptive-pill/">combined contraceptive
+                                pill</a> or <a href="/conditions/hormone-replacement-therapy-hrt/">HRT</a> to make up
+                            for your missing hormones.</p>
+                        <p>A GP will probably recommend you take this treatment until at least the age of natural
+                            menopause (around 51 on average), to give you some protection from osteoporosis and other
+                            conditions that can develop after the menopause.</p>
+                        <p>If you have had certain types of cancer, such as certain types of breast cancer, you may not
+                            be able to have hormonal treatment.</p>
+                        <p>The GP will talk to you about other treatment options and lifestyle changes you can make to
+                            help protect your health.</p>
+                        <p>If you're still getting symptoms, the GP can refer you to a specialist menopause centre.</p>
+                        <p>Read more about <a href="/conditions/menopause/treatment/">treating the symptoms of the
+                                menopause</a>.</p>
+                    </section>
+
+
+                    <section>
+                        <h2>Getting support</h2>
+                        <p>Going through the menopause early can be difficult and upsetting.</p>
+                        <p>Permanent early menopause will affect your ability to have children naturally.</p>
+                        <p>You may still be able to have children by using <a href="/conditions/ivf/">IVF</a> and
+                            donated eggs from another woman, or using your own eggs if you had some stored. Surrogacy
+                            and adoption may also be options for you.</p>
+                        <p><a href="/conditions/stress-anxiety-depression/benefits-of-talking-therapy/">Counselling</a>
+                            and support groups may be helpful.</p>
+                        <p>Here are some you may want to try:</p>
+                        <ul>
+                            <li><a href="http://www.daisynetwork.org.uk/">The Daisy Network</a> – a support group for
+                                women with premature ovarian failure</li>
+                            <li><a href="https://healthtalk.org/menopause/early-premature-menopause">healthtalk.org</a>
+                                – provides information about early menopause, including women talking about their own
+                                experiences</li>
+                            <li><a href="http://www.fertilityfriends.co.uk/">Fertility friends</a> – a support network
+                                for people with fertility problems</li>
+                            <li><a href="http://www.hfea.gov.uk/">Human Fertilisation and Embryology Authority
+                                    (HFEA)</a> – provides information on all types of fertility treatment</li>
+                            <li><a href="https://www.adoptionuk.org/">Adoption UK</a> – a charity for people who are
+                                adopting children</li>
+                            <li><a href="https://www.surrogacyuk.org/">Surrogacy UK</a> – a charity that supports both
+                                surrogates and parents through the process</li>
+                        </ul>
+                    </section>
+
+                    <div>
+                        <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+                            Page last reviewed: 02 February 2021<br>
+                            Next review due: 02 February 2024
+                        </p>
+                    </div>
+
+                </div>
+
+            </div>
+        </article>
+
+
+{% endblock %}
+
+
+
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+    <div class="nhsuk-footer" id="nhsuk-footer">
+        <div class="nhsuk-width-container">
+            <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+            <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/"
+                        class="nhsuk-footer__list-item-link">NHS sites</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/"
+                        class="nhsuk-footer__list-item-link">NHS App</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/"
+                        class="nhsuk-footer__list-item-link">About us</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/"
+                        class="nhsuk-footer__list-item-link">Contact us</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx"
+                        class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/"
+                        class="nhsuk-footer__list-item-link">Site map</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/"
+                        class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/"
+                        class="nhsuk-footer__list-item-link">Our policies</a></li>
+                <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/"
+                        class="nhsuk-footer__list-item-link">Cookies</a></li>
+            </ul>
+            <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+        </div>
+    </div>
+</footer>
+{% endblock %}

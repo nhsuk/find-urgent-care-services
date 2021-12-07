@@ -1,0 +1,253 @@
+{% extends 'layout.html' %}
+
+{% block pageTitle %}
+Content page template - NHS.UK prototype kit
+{% endblock %}
+
+<!-- Header goes inside the header block -->
+<!-- More info and code for the header can be found at https://service-manual.nhs.uk/design-system/components/header -->
+{% block header %}
+
+  {{
+    header({
+      "showNav": "true",
+      "showSearch": "true",
+      "primaryLinks": [
+        {
+        "url": "https://www.nhs.uk/conditions/",
+        "label" : "Health A-Z "
+        },
+    
+        {
+        'url': 'https://www.nhs.uk/live-well/',
+        'label' : 'Live Well'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/mental-health/',
+        'label' : 'Mental health'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/conditions/social-care-and-support-guide/',
+        'label' : 'Care and support'
+        },
+
+        {
+        'url': 'pregnancy-hub/',
+        'label' : 'Pregnancy'
+        },
+
+        {
+        'url': 'https://www.nhs.uk/nhs-services/',
+        'label': 'NHS services'
+        }
+      ]
+    })
+  }}
+
+{% endblock %}
+
+
+{% block beforeContent %}
+  {{ breadcrumb({
+    items: [
+      {
+        href: "/",
+        text: "Home"
+      },
+      {
+        href: "/",
+        text: "Health A to Z"
+      }
+    ],
+        href: "menopause",
+        text: "Menopause"
+  }) }}
+{% endblock %}
+
+
+
+{% block content %}
+
+    <div class="nhsuk-grid-row">
+      <div class="nhsuk-grid-column-two-thirds">
+
+        <h1>
+          <span role="text">Hot flushes
+            <span class="nhsuk-caption-xl nhsuk-caption--bottom">
+              <span class="nhsuk-u-visually-hidden"> - </span>
+              Menopause
+            </span>
+          </span>
+        </h1>
+
+
+        <nav class="nhsuk-contents-list" role="navigation" aria-label="Pages in this guide">
+          <h2 class="nhsuk-u-visually-hidden">Contents</h2>
+          <ol class="nhsuk-contents-list__list">
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="menopause">Overview</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="symptoms">Symptoms</a>
+            </li>
+
+            <li class="nhsuk-contents-list__item">
+              <a class="nhsuk-contents-list__link" href="treatment">Treatment</a>
+            </li>
+
+          </ol>
+        </nav>
+
+      </div>
+    </div>
+
+    <article>
+      <div class="nhsuk-grid-row">
+        <div class="nhsuk-grid-column-two-thirds">
+
+          <section>
+            <p><b>Most women will experience hot flushes when going through the menopause.</b></p>
+            <p>They're often described as a sudden feeling of heat that seems to come from nowhere and spreads
+              throughout the body.</p>
+            <p>You might also experience <a href="/conditions/excessive-sweating-hyperhidrosis/">sweating</a>, <a
+                href="/conditions/heart-palpitations/">palpitations</a> and flushing of the face.</p>
+            <p>Some women only have occasional hot flushes that do not really bother them, while others can have many a
+              day and find them uncomfortable, disruptive and embarrassing.</p>
+            <p>Hot flushes can start a few months or years before your periods stop (before you start the menopause) and
+              usually continue for several years after your last period.</p>
+          </section>
+
+
+          <section>
+            <h2>Causes of hot flushes</h2>
+            <p>Hot flushes usually affect women who are approaching the menopause and are thought to be caused by
+              changes in your hormone levels affecting your body's temperature control.</p>
+            <p>They can happen without warning throughout the day and night, but can also be triggered by:</p>
+            <ul>
+              <li>eating spicy foods</li>
+              <li>caffeine and alcohol</li>
+              <li>smoking</li>
+              <li>wearing thick clothing</li>
+              <li>a high temperature</li>
+              <li>feeling stressed or anxious</li>
+              <li>treatment for certain types of cancer (this can affect both men and women)</li>
+              <li>certain medicines</li>
+              <li>some health conditions, such as an overactive thyroid, diabetes and tuberculosis</li>
+            </ul>
+          </section>
+
+
+          <section>
+            <h2>Is a hot flush anything to worry about?</h2>
+            <p>Hot flushes are usually harmless. But you should talk to your GP if you're having other symptoms as well,
+              such as feeling generally unwell, fatigue, weakness, weight loss or diarrhoea.</p>
+          </section>
+
+
+
+          <section>
+            <h2>What does a hot flush feel like?</h2>
+            <p>Women often describe a hot flush as a creeping feeling of intense warmth that quickly spreads across your
+              whole body and face.</p>
+            <p>It typically lasts for several minutes. Others say the warmth is similar to the sensation of being under
+              a sun bed, or feeling like a furnace.</p>
+            <p>The website healthtalk.org has several <a
+                href="http://www.healthtalk.org/peoples-experiences/later-life/menopause/hot-flushes-and-sweats">videos
+                where women describe what a hot flush feels like</a>.</p>
+          </section>
+
+
+          <section>
+            <h2>Treatments for hot flushes</h2>
+            <p>Many women learn to live with menopause-related hot flushes, but if they're really bothering you and
+              interfering with your day-to-day life, talk to a GP about treatments that may help.</p>
+            <p>The most effective treatment for hot flushes is <a
+                href="/conditions/hormone-replacement-therapy-hrt/">hormone replacement therapy (HRT)</a>, which usually
+              completely gets rid of them. Your doctor will talk to you about the benefits and risks of using HRT.</p>
+            <p>If you have had a type of cancer that's sensitive to hormones, such as breast cancer, your doctor will
+              not recommend HRT and will talk to you about alternatives.</p>
+            <p>Other medicines have been shown to help, including some antidepressants and a medicine called clonidine.
+            </p>
+            <p><a href="/conditions/menopause/treatment/">Find out more about treatment for hot flushes and other
+                menopausal symptoms</a></p>
+          </section>
+
+
+
+          <section>
+            <h2>Tips for reducing hot flushes</h2>
+            <p>You can try these tips to ease your symptoms:</p>
+            <ul>
+              <li>cut out or reduce coffee and tea</li>
+              <li>stop smoking</li>
+              <li>keep the room cool and use a fan (electric or handheld) if necessary</li>
+              <li>if you feel a flush coming on, spray your face with cool water or use a cold gel pack (available from
+                pharmacies)</li>
+              <li>wear loose layers of light cotton or silk clothes so you can easily take some clothes off if you
+                overheat</li>
+              <li>have layers of sheets on the bed, rather than a duvet, so you can remove them as you need to</li>
+              <li>cut down on alcohol</li>
+              <li>sip cold or iced drinks</li>
+              <li>have a lukewarm shower or bath instead of a hot one</li>
+              <li>if medicine is causing your hot flushes, talk to your doctor about other ways you can take it to avoid
+                this side effect</li>
+            </ul>
+          </section>
+
+
+
+          <section>
+            <h2>Complementary therapies for hot flushes</h2>
+            <p>Women often turn to complementary therapies as a "natural" way to treat their hot flushes.</p>
+            <p>There's some evidence that isoflavones or black cohosh may help reduce hot flushes.</p>
+            <p>But the research is patchy, the quality of the products can vary considerably, they can interfere with
+              some medicines, and they can have side effects (for example, liver damage has been reported with black
+              cohosh).</p>
+            <p>It's important to talk to your doctor before you take a complementary therapy.</p>
+            <p><a href="/conditions/complementary-and-alternative-medicine/">Find out more about complementary
+                therapies</a></p>
+          </section>
+
+          <div>
+            <p class="nhsuk-body-s nhsuk-u-margin-top-7 nhsuk-u-secondary-text-color">
+              Page last reviewed: 29 August 2018<br>
+              Next review due: 29 August 2021
+            </p>
+          </div>
+
+        </div>
+
+      </div>
+    </article>
+
+
+{% endblock %}
+
+
+<!-- Footer goes inside the footer block -->
+<!-- Footer code examples can be found at https://service-manual.nhs.uk/design-system/components/footer -->
+{% block footer %}
+<footer role="contentinfo">
+  <div class="nhsuk-footer" id="nhsuk-footer">
+    <div class="nhsuk-width-container">
+      <h2 class="nhsuk-u-visually-hidden">Support links</h2>
+      <ul class="nhsuk-footer__list nhsuk-footer__list--three-columns">
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-sites/" class="nhsuk-footer__list-item-link">NHS sites</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/nhs-app/" class="nhsuk-footer__list-item-link">NHS App</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/" class="nhsuk-footer__list-item-link">About us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/contact-us/" class="nhsuk-footer__list-item-link">Contact us</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/personalisation/login.aspx" class="nhsuk-footer__list-item-link">Profile editor login</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/about-us/site-map/" class="nhsuk-footer__list-item-link">Site map</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/accessibility-statement/" class="nhsuk-footer__list-item-link">Accessibility statement</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/" class="nhsuk-footer__list-item-link">Our policies</a></li>
+        <li class="nhsuk-footer__list-item"><a href="https://www.nhs.uk/our-policies/cookies-policy/" class="nhsuk-footer__list-item-link">Cookies</a></li>
+      </ul>
+      <p class="nhsuk-footer__copyright">&copy; Crown copyright</p>
+    </div>
+  </div>
+</footer>
+{% endblock %}
